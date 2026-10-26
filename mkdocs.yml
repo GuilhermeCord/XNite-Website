@@ -1,0 +1,270 @@
+site_name: X-Nite
+site_url: https://GuilhermeCord.github.io/XNite-Website/
+theme:
+  name: material
+  language: en
+  logo: assets/xbox-logo.png
+  favicon: assets/xbox-logo.png
+  palette:
+    scheme: default
+    primary: black
+    accent: green
+  features:
+  - navigation.sections
+  - navigation.top
+  - navigation.footer
+  - search.highlight
+  - search.suggest
+  - navigation.tabs
+  custom_dir: overrides
+  font: false
+extra_css:
+- stylesheets/extra.css
+plugins:
+- search
+- i18n:
+    docs_structure: suffix
+    fallback_to_default: false
+    reconfigure_material: true
+    reconfigure_search: true
+    languages:
+    - locale: en
+      default: true
+      name: English
+      build: true
+      nav_translations:
+        Installation guide: Installation guide
+        Overview: Overview
+        Prepare Playnite: Prepare Playnite
+        Configure integrations: Configure integrations
+        Install and activate: Install and activate
+        01. Download Playnite: 01. Download Playnite
+        02. Install Playnite: 02. Install Playnite
+        03. Install the integrations: 03. Install the integrations
+        04. Review Playnite settings: 04. Review Playnite settings
+        05. Configure artwork and metadata: 05. Configure artwork and metadata
+        06. Connect Playnite Achievements: 06. Connect Playnite Achievements
+        07. Set up trailer tools: 07. Set up trailer tools
+        08. Enable game logos: 08. Enable game logos
+        09. Create and apply the SteamGridDB key: 09. Create and apply the SteamGridDB
+          key
+        10. Choose a music profile: 10. Choose a music profile
+        11. Review music playback: 11. Review music playback
+        12. Choose the default music source: 12. Choose the default music source
+        13. Set music pause behaviour: 13. Set music pause behaviour
+        14. Download X-Nite: 14. Download X-Nite
+        15. Identify the two packages: 15. Identify the two packages
+        16. Install X-Nite Profile System: 16. Install X-Nite Profile System
+        17. Install the Fullscreen theme: 17. Install the Fullscreen theme
+        18. Activate X-Nite and finish: 18. Activate X-Nite and finish
+    - locale: pt-BR
+      name: Português
+      build: true
+      nav_translations:
+        Home: Início
+        Start here: Comece aqui
+        Installation: Instalação
+        First setup: Primeira configuração
+        Controller and navigation: Controle e navegação
+        Main features: Principais recursos
+        Profiles: Perfis
+        Home and pinned games: Home e jogos fixados
+        Library and groups: Biblioteca e grupos
+        Achievements: Conquistas
+        Settings: Configurações
+        Help: Ajuda
+        Performance: Desempenho
+        Troubleshooting: Problemas comuns
+        Installation guide: Guia de instalação
+        Overview: Visão geral
+        Prepare Playnite: Preparar o Playnite
+        Configure integrations: Configurar as integrações
+        Install and activate: Instalar e ativar
+        01. Download Playnite: 01. Baixar o Playnite
+        02. Install Playnite: 02. Instalar o Playnite
+        03. Install the integrations: 03. Instalar as integrações
+        04. Review Playnite settings: 04. Revisar as configurações do Playnite
+        05. Configure artwork and metadata: 05. Configurar artes e metadados
+        06. Connect Playnite Achievements: 06. Conectar o Playnite Achievements
+        07. Set up trailer tools: 07. Preparar as ferramentas de vídeo
+        08. Enable game logos: 08. Ativar as logos dos jogos
+        09. Create and apply the SteamGridDB key: 09. Criar e aplicar a chave SteamGridDB
+        10. Choose a music profile: 10. Escolher o perfil de música
+        11. Review music playback: 11. Revisar a reprodução de música
+        12. Choose the default music source: 12. Escolher a fonte de música padrão
+        13. Set music pause behaviour: 13. Definir quando a música pausa
+        14. Download X-Nite: 14. Baixar o X-Nite
+        15. Identify the two packages: 15. Identificar os dois pacotes
+        16. Install X-Nite Profile System: 16. Instalar o X-Nite Profile System
+        17. Install the Fullscreen theme: 17. Instalar o tema Fullscreen
+        18. Activate X-Nite and finish: 18. Ativar o X-Nite e concluir
+    - locale: es
+      name: Español
+      build: true
+      nav_translations:
+        Home: Inicio
+        Start here: Primeros pasos
+        Installation: Instalación
+        First setup: Configuración inicial
+        Controller and navigation: Control y navegación
+        Main features: Funciones principales
+        Profiles: Perfiles
+        Home and pinned games: Inicio y juegos fijados
+        Library and groups: Biblioteca y grupos
+        Achievements: Logros
+        Settings: Configuración
+        Help: Ayuda
+        Performance: Rendimiento
+        Troubleshooting: Problemas comunes
+        Installation guide: Guía de instalación
+        Overview: Vista general
+        Prepare Playnite: Preparar Playnite
+        Configure integrations: Configurar las integraciones
+        Install and activate: Instalar y activar
+        01. Download Playnite: 01. Descargar Playnite
+        02. Install Playnite: 02. Instalar Playnite
+        03. Install the integrations: 03. Instalar las integraciones
+        04. Review Playnite settings: 04. Revisar los ajustes de Playnite
+        05. Configure artwork and metadata: 05. Configurar imágenes y metadatos
+        06. Connect Playnite Achievements: 06. Conectar Playnite Achievements
+        07. Set up trailer tools: 07. Preparar las herramientas de vídeo
+        08. Enable game logos: 08. Activar los logos de juegos
+        09. Create and apply the SteamGridDB key: 09. Crear y aplicar la clave SteamGridDB
+        10. Choose a music profile: 10. Elegir el perfil de música
+        11. Review music playback: 11. Revisar la reproducción musical
+        12. Choose the default music source: 12. Elegir la fuente musical
+        13. Set music pause behaviour: 13. Definir cuándo pausar la música
+        14. Download X-Nite: 14. Descargar X-Nite
+        15. Identify the two packages: 15. Identificar los dos paquetes
+        16. Install X-Nite Profile System: 16. Instalar X-Nite Profile System
+        17. Install the Fullscreen theme: 17. Instalar el tema Fullscreen
+        18. Activate X-Nite and finish: 18. Activar X-Nite y finalizar
+    - locale: fr
+      name: Français
+      build: true
+      nav_translations:
+        Home: Accueil
+        Start here: Bien démarrer
+        Installation: Installation
+        First setup: Première configuration
+        Controller and navigation: Manette et navigation
+        Main features: Fonctions principales
+        Profiles: Profils
+        Home and pinned games: Accueil et jeux épinglés
+        Library and groups: Bibliothèque et groupes
+        Achievements: Succès
+        Settings: Paramètres
+        Help: Aide
+        Performance: Performances
+        Troubleshooting: Problèmes courants
+        Installation guide: Guide d’installation
+        Overview: Présentation
+        Prepare Playnite: Préparer Playnite
+        Configure integrations: Configurer les intégrations
+        Install and activate: Installer et activer
+        01. Download Playnite: 01. Télécharger Playnite
+        02. Install Playnite: 02. Installer Playnite
+        03. Install the integrations: 03. Installer les intégrations
+        04. Review Playnite settings: 04. Vérifier les paramètres de Playnite
+        05. Configure artwork and metadata: 05. Configurer les images et métadonnées
+        06. Connect Playnite Achievements: 06. Connecter Playnite Achievements
+        07. Set up trailer tools: 07. Préparer les outils vidéo
+        08. Enable game logos: 08. Activer les logos des jeux
+        09. Create and apply the SteamGridDB key: 09. Créer et utiliser la clé SteamGridDB
+        10. Choose a music profile: 10. Choisir le profil musical
+        11. Review music playback: 11. Vérifier la lecture musicale
+        12. Choose the default music source: 12. Choisir la source musicale
+        13. Set music pause behaviour: 13. Définir les pauses musicales
+        14. Download X-Nite: 14. Télécharger X-Nite
+        15. Identify the two packages: 15. Identifier les deux paquets
+        16. Install X-Nite Profile System: 16. Installer X-Nite Profile System
+        17. Install the Fullscreen theme: 17. Installer le thème Fullscreen
+        18. Activate X-Nite and finish: 18. Activer X-Nite et terminer
+    - locale: it
+      name: Italiano
+      build: true
+      nav_translations:
+        Home: Home
+        Start here: Per iniziare
+        Installation: Installazione
+        First setup: Prima configurazione
+        Controller and navigation: Controller e navigazione
+        Main features: Funzioni principali
+        Profiles: Profili
+        Home and pinned games: Home e giochi fissati
+        Library and groups: Raccolta e gruppi
+        Achievements: Obiettivi
+        Settings: Impostazioni
+        Help: Aiuto
+        Performance: Prestazioni
+        Troubleshooting: Problemi comuni
+        Installation guide: Guida all’installazione
+        Overview: Panoramica
+        Prepare Playnite: Preparare Playnite
+        Configure integrations: Configurare le integrazioni
+        Install and activate: Installare e attivare
+        01. Download Playnite: 01. Scaricare Playnite
+        02. Install Playnite: 02. Installare Playnite
+        03. Install the integrations: 03. Installare le integrazioni
+        04. Review Playnite settings: 04. Verificare le impostazioni di Playnite
+        05. Configure artwork and metadata: 05. Configurare immagini e metadati
+        06. Connect Playnite Achievements: 06. Collegare Playnite Achievements
+        07. Set up trailer tools: 07. Preparare gli strumenti video
+        08. Enable game logos: 08. Attivare i loghi dei giochi
+        09. Create and apply the SteamGridDB key: 09. Creare e applicare la chiave
+          SteamGridDB
+        10. Choose a music profile: 10. Scegliere il profilo musicale
+        11. Review music playback: 11. Verificare la riproduzione musicale
+        12. Choose the default music source: 12. Scegliere la sorgente musicale
+        13. Set music pause behaviour: 13. Definire le pause della musica
+        14. Download X-Nite: 14. Scaricare X-Nite
+        15. Identify the two packages: 15. Identificare i due pacchetti
+        16. Install X-Nite Profile System: 16. Installare X-Nite Profile System
+        17. Install the Fullscreen theme: 17. Installare il tema Fullscreen
+        18. Activate X-Nite and finish: 18. Attivare X-Nite e terminare
+nav:
+- Home: index.md
+- Installation guide:
+  - Overview: install.md
+  - Prepare Playnite:
+    - 01. Download Playnite: installation/01-download-playnite.md
+    - 02. Install Playnite: installation/02-install-playnite.md
+    - 03. Install the integrations: installation/03-add-ons.md
+  - Configure integrations:
+    - 04. Review Playnite settings: installation/04-playnite-settings.md
+    - 05. Configure artwork and metadata: installation/05-metadata.md
+    - 06. Connect Playnite Achievements: installation/06-achievements.md
+    - 07. Set up trailer tools: installation/07-video-tools.md
+    - 08. Enable game logos: installation/08-logos.md
+    - 09. Create and apply the SteamGridDB key: installation/09-steamgriddb-api.md
+    - 10. Choose a music profile: installation/10-music-profile.md
+    - 11. Review music playback: installation/11-music-playback.md
+    - 12. Choose the default music source: installation/12-default-music.md
+    - 13. Set music pause behaviour: installation/13-music-pauses.md
+  - Install and activate:
+    - 14. Download X-Nite: installation/14-download-xnite.md
+    - 15. Identify the two packages: installation/15-installation-files.md
+    - 16. Install X-Nite Profile System: installation/16-install-extension.md
+    - 17. Install the Fullscreen theme: installation/17-install-theme.md
+    - 18. Activate X-Nite and finish: installation/18-activate-theme.md
+- Start here:
+  - First setup: first-setup.md
+  - Controller and navigation: controller.md
+- Main features:
+  - Profiles: profiles.md
+  - Home and pinned games: home-and-pinned-games.md
+  - Library and groups: library-and-groups.md
+  - Achievements: achievements.md
+  - Settings: settings.md
+- Help:
+  - Performance: performance.md
+  - Troubleshooting: troubleshooting.md
+markdown_extensions:
+- admonition
+- attr_list
+- tables
+extra_javascript:
+- javascripts/installation.js
+site_description: X-Nite — an Xbox-inspired Fullscreen experience for Playnite. Explore
+  profiles, your library and the illustrated installation guide.
+
