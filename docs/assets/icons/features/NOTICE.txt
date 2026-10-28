@@ -1,0 +1,9 @@
+Fluent System Icons Regular â€” Microsoft Corporation
+Feature navigation SVGs: person, home, library, trophy, and settings (20px Regular).
+Source: https://github.com/microsoft/fluentui-system-icons
+Source commit: 82ecf7cbdb43684403c7125efa160be04a33dca5
+License: MIT; see ../../fonts/FLUENT-LICENSE.txt.
+
+games.svg: controller path reused from XNiteLibraryControl.xaml (All button) in this project.
+
+xbox.svg: Xbox logo glyph m from the same XBOXONE font used by the Playnite Hub.

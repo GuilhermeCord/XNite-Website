@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block htmltitle %}
+  <title>{{ (page.meta.title if page.meta and page.meta.title else page.title) | striptags }} | {{ config.site_name }}</title>
+{% endblock %}
+{# Primary navigation is in the shared single-row header. #}
+{% block tabs %}{% endblock %}
+
+{% block footer %}{% include "partials/site-footer.html" %}{% endblock %}
+
+{% block scripts %}
+  <script src="{{ 'javascripts/search-language.js?v=20261027' | url }}"></script>
+  {{ super() }}
+{% endblock %}

@@ -1,18 +1,26 @@
-# Profiles
+---
+title: Profiles
+template: features.html
+feature_navigation: Main features
+hide:
+- navigation
+- toc
+---
 
-Each profile stores its name, avatar, accent, backgrounds, favorites, groups, recent games, pinned games and Hub preferences.
+<div class="xn-profile-feature">
 
-![Profile selector with multiple accounts](assets/screenshots/profiles.webp)
+<header class="xn-feature-intro"><span class="xn-feature-eyebrow">Profiles</span></header>
 
-![Profile customization with avatar, color and background options](assets/screenshots/profile-customization.webp)
+<section class="xn-feature-section"><h1>Choose who is playing</h1><p>Open the profile selector and choose a profile. Your Home, favorites, pinned games and groups follow the selected profile.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Choose who is playing"><figure data-feature-frame><a href="../assets/features/profiles/01.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Choose who is playing"><img src="../assets/features/profiles/01.webp" alt="Choose who is playing" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Choose who is playing</figcaption></figure></div></section>
 
-## Customize a profile
+<section class="xn-feature-section"><h1>Get to know your profile</h1><p>Welcome brings together your profile overview. Social shows recent activity; Gaming lets you explore games and achievements, compare progress and search the current list.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Get to know your profile"><figure data-feature-frame><a href="../assets/features/profiles/02.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Welcome"><img src="../assets/features/profiles/02.webp" alt="Welcome" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Welcome</figcaption></figure><figure data-feature-frame><a href="../assets/features/profiles/03.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Social"><img src="../assets/features/profiles/03.webp" alt="Social" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Social</figcaption></figure><figure data-feature-frame><a href="../assets/features/profiles/04.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Gaming"><img src="../assets/features/profiles/04.webp" alt="Gaming" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Gaming</figcaption></figure></div></section>
 
-1. Open the Hub and enter your profile.
-2. Open customization.
-3. Choose the avatar, accent, main background or profile background.
-4. Press X to edit an imported item when Edit is available.
+<section class="xn-feature-section"><h1>Make it yours</h1><p>Open Customize profile to change your name, avatar, color and backgrounds. Choose Done when you finish.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Make it yours"><figure data-feature-frame><a href="../assets/features/profiles/05.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Make it yours"><img src="../assets/features/profiles/05.webp" alt="Make it yours" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Make it yours</figcaption></figure></div></section>
 
-Switching profiles immediately restores that person's Home and library choices.
+<section class="xn-feature-section"><h1>Choose your avatar</h1><p>Use a preset or import a photo. After importing, adjust the framing before saving. You can edit an imported image again when Edit is available.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Choose your avatar"><figure data-feature-frame><a href="../assets/features/profiles/06.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Choose avatar"><img src="../assets/features/profiles/06.webp" alt="Choose avatar" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Choose avatar</figcaption></figure><figure data-feature-frame><a href="../assets/features/profiles/07.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Import photo"><img src="../assets/features/profiles/07.webp" alt="Import photo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Import photo</figcaption></figure><figure data-feature-frame><a href="../assets/features/profiles/08.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Adjust photo"><img src="../assets/features/profiles/08.webp" alt="Adjust photo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Adjust photo</figcaption></figure></div></section>
 
-![Personal profile overview with achievement statistics](assets/screenshots/my-profile.webp)
+<section class="xn-feature-section"><h1>Find your color</h1><p>Choose an accent or create a custom color. Adjust hue, saturation and lightness, then save. Use Edit to refine a custom color later.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Find your color"><figure data-feature-frame><a href="../assets/features/profiles/09.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Accent colors"><img src="../assets/features/profiles/09.webp" alt="Accent colors" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Accent colors</figcaption></figure><figure data-feature-frame><a href="../assets/features/profiles/10.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Custom color"><img src="../assets/features/profiles/10.webp" alt="Custom color" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Custom color</figcaption></figure></div></section>
+
+<section class="xn-feature-section"><h1>Two backgrounds, your style</h1><p>The main background appears on Home; the profile background appears on your profile. Choose a preset or import your own media. Imported items offer editing when available.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Two backgrounds, your style"><figure data-feature-frame><a href="../assets/features/profiles/11.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Main background"><img src="../assets/features/profiles/11.webp" alt="Main background" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Main background</figcaption></figure><figure data-feature-frame><a href="../assets/features/profiles/12.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Profile background"><img src="../assets/features/profiles/12.webp" alt="Profile background" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Profile background</figcaption></figure></div></section>
+
+<aside class="xn-feature-first-launch"><h2>First time here?</h2><p>Follow First launch in the installation guide to create your first profile.</p><a href="../installation/19-first-launch/">Open first launch</a></aside></div>

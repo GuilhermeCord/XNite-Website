@@ -1,0 +1,25 @@
+{% set locale = config.theme.language.split('-')[0] %}
+{% set footer_text = {
+  'en': ['Independent community project. Not affiliated with Microsoft or Xbox.', 'X-Nite videos on YouTube', 'Support X-Nite on Buy Me a Coffee', 'Opens in a new tab'],
+  'pt': ['Projeto independente da comunidade. Sem vínculo com a Microsoft ou o Xbox.', 'Vídeos do X-Nite no YouTube', 'Apoiar o X-Nite no Buy Me a Coffee', 'Abre em uma nova aba'],
+  'es': ['Proyecto independiente de la comunidad. Sin afiliación con Microsoft ni Xbox.', 'Vídeos de X-Nite en YouTube', 'Apoyar X-Nite en Buy Me a Coffee', 'Se abre en una nueva pestaña'],
+  'fr': ['Projet communautaire indépendant. Sans affiliation avec Microsoft ou Xbox.', 'Vidéos X-Nite sur YouTube', 'Soutenir X-Nite sur Buy Me a Coffee', 'S’ouvre dans un nouvel onglet'],
+  'it': ['Progetto indipendente della community. Non affiliato a Microsoft o Xbox.', 'Video di X-Nite su YouTube', 'Sostieni X-Nite su Buy Me a Coffee', 'Si apre in una nuova scheda']
+} %}
+{% set labels = footer_text.get(locale, footer_text['en']) %}
+<footer class="xn-site-footer">
+  <div class="xn-site-footer__identity">
+    <strong class="xn-site-footer__brand">X-Nite</strong>
+    <p class="xn-site-footer__note">{{ labels[0] }}</p>
+  </div>
+  <div class="xn-site-footer__actions">
+    <a class="xn-footer-social xn-footer-youtube" href="https://www.youtube.com/playlist?list=PLOqFP3LARK6E" target="_blank" rel="noopener noreferrer" aria-label="{{ labels[1] }} — {{ labels[3] }}">
+      <svg viewBox="0 0 32 24" aria-hidden="true"><rect x="0" y="1" width="32" height="22" rx="6" fill="#ff0000"/><path d="M13 7v10l9-5z" fill="#fff"/></svg>
+      <span>YouTube</span>
+    </a>
+    <a class="xn-footer-social xn-footer-coffee" href="https://buymeacoffee.com/xnite" target="_blank" rel="noopener noreferrer" aria-label="{{ labels[2] }} — {{ labels[3] }}">
+      <img src="{{ 'assets/icons/buymeacoffee.svg' | url }}" width="24" height="34" alt="" aria-hidden="true">
+      <span>Buy Me a Coffee</span>
+    </a>
+  </div>
+</footer>

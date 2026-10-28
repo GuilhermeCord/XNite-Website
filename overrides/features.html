@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block container %}
+<div class="xn-feature-workspace">
+  <aside class="xn-feature-sidebar">
+    <details class="xn-feature-navigation" open>
+      <summary class="xn-feature-navigation__toggle"><span>{{ page.meta.feature_navigation }}</span><span class="xn-chevron" aria-hidden="true"></span></summary>
+      <nav aria-label="{{ page.meta.feature_navigation }}">
+        {% set icons = ['home', 'library', 'xbox', 'person', 'trophy', 'play', 'games'] %}
+        {% for group in nav %}
+          {% if group.children and group.children[0].url and 'home-and-pinned-games' in group.children[0].url %}
+            {% for feature in group.children %}
+              {% if feature.active %}
+                <details class="xn-feature-category xn-feature-category--active" open>
+                  <summary><img src="{{ ('assets/icons/features/' ~ icons[loop.index0] ~ '.svg') | url }}" alt=""><span>{{ feature.title }}</span><span class="xn-chevron" aria-hidden="true"></span></summary>
+                  <div class="xn-feature-subsections" data-feature-subsections></div>
+                </details>
+              {% else %}
+                <details class="xn-feature-category" data-feature-url="{{ feature.url | url }}">
+                  <summary><img src="{{ ('assets/icons/features/' ~ icons[loop.index0] ~ '.svg') | url }}" alt=""><span>{{ feature.title }}</span><span class="xn-chevron" aria-hidden="true"></span></summary>
+                  <div class="xn-feature-subsections" data-feature-remote><a href="{{ feature.url | url }}">{{ feature.title }}</a></div>
+                </details>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </details>
+  </aside>
+  <div class="md-content xn-feature-content" data-md-component="content"><article class="md-content__inner md-typeset">{{ page.content }}</article></div>
+</div>
+{% endblock %}

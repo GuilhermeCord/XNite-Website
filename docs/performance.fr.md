@@ -1,7 +1,12 @@
-# Performances
-- Gardez Playnite, les pilotes graphiques et les intégrations à jour.
-- Évitez les images beaucoup plus grandes que la résolution d'affichage.
-- Attendez le premier chargement des jaquettes et succès avant de comparer.
-- Indiquez résolution, GPU et taille de bibliothèque dans les rapports.
+---
+title: Performances
+template: faq.html
+hide:
+- navigation
+- toc
+- footer
+search:
+  exclude: true
+---
 
-Ne supprimez pas les données de l'extension : elles contiennent les profils.
+<a href="../help/#performance" data-guide-redirect>Aide et questions fréquentes</a>

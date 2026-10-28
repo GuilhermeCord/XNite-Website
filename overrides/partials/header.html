@@ -1,0 +1,56 @@
+{# X-Nite navigation. Material still provides search and language selection. #}
+{% macro destination(item) -%}
+  {%- if item.children -%}{{ destination(item.children[0]) }}{%- else -%}{{ item.url | url }}{%- endif -%}
+{%- endmacro %}
+{% macro navigation() %}
+  {% for item in nav %}
+    {% if item.children %}
+      <details class="xn-nav-group"{% if item.active %} data-active{% endif %}>
+        <summary><span class="xn-nav-label">{{ item.title }}</span><span class="xn-chevron" aria-hidden="true"></span></summary>
+        <div class="xn-nav-dropdown">
+          {% for child in item.children %}
+            {% if child.children %}
+              <details class="xn-nav-subgroup"{% if child.active %} data-active{% endif %}>
+                <summary><a class="xn-nav-label" href="{{ destination(child) }}">{{ child.title }}</a><span class="xn-chevron xn-chevron--branch" aria-hidden="true"></span></summary>
+                <div class="xn-nav-flyout">
+                  {% for step in child.children %}
+                    <a href="{{ destination(step) }}"{% if step.active %} aria-current="page"{% endif %}>{{ step.title }}</a>
+                  {% endfor %}
+                </div>
+              </details>
+            {% else %}
+              {% if 'Main features' == item.title or 'home-and-pinned-games' in item.children[0].url %}
+              <details class="xn-nav-subgroup" data-feature-menu-url="{{ child.url | url }}">
+                <summary><a class="xn-nav-label" href="{{ child.url | url }}">{{ child.title }}</a><span class="xn-chevron xn-chevron--branch" aria-hidden="true"></span></summary>
+                <div class="xn-nav-flyout"><a href="{{ child.url | url }}">{{ child.title }}</a></div>
+              </details>
+              {% else %}<a href="{{ child.url | url }}"{% if child.active %} aria-current="page"{% endif %}>{{ child.title }}</a>{% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </details>
+    {% else %}
+      <a class="xn-nav-link" href="{{ item.url | url }}"{% if item.active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+<header class="md-header xn-header" data-md-component="header">
+  <div class="md-header__inner md-grid xn-header__inner">
+    <a href="{{ nav.homepage.url | url }}" class="xn-brand" aria-label="X-Nite — {{ nav.homepage.title }}" data-md-component="logo">{% include "partials/logo.html" %}<span>X-Nite</span></a>
+    <nav class="xn-desktop-navigation" aria-label="{{ lang.t('header') }}">{{ navigation() }}</nav>
+    <details class="xn-mobile-navigation">
+      <summary aria-label="Menu"><span class="xn-menu-icon" aria-hidden="true"><svg class="xn-menu-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg><svg class="xn-menu-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m5 5 14 14M19 5 5 19"/></svg></span><span class="xn-menu-label">Menu</span></summary>
+      <nav aria-label="Menu">{{ navigation() }}</nav>
+    </details>
+    <div class="xn-header__tools">
+      {% if config.extra.alternate %}{% include "partials/alternate.html" %}{% endif %}
+      {% if "material/search" in config.plugins %}
+        {% set search = config.plugins["material/search"] | attr("config") %}
+        {% if search.enabled %}
+          <label class="md-header__button md-icon xn-search-launcher" for="__search" role="button" tabindex="0" aria-label="{{ lang.t('search.placeholder') }}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="10" r="6"/><path d="m14.5 14.5 5.5 5.5"/></svg></label>
+          {% include "partials/search.html" %}
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</header>

@@ -1,8 +1,12 @@
-# Problèmes courants
-## Le thème n'apparaît pas
-Redémarrez Playnite et sélectionnez X-Nite comme thème Fullscreen.
+---
+title: Problèmes courants
+template: faq.html
+hide:
+- navigation
+- toc
+- footer
+search:
+  exclude: true
+---
 
-## Le bureau apparaît au lancement
-Désactivez `Réduire après le démarrage d'un jeu` dans les paramètres Fullscreen.
-
-Indiquez les versions, Windows, la résolution, la manette et les étapes exactes.
+<a href="../help/#troubleshooting" data-guide-redirect>Aide et questions fréquentes</a>

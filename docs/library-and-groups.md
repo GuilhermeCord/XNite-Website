@@ -1,15 +1,24 @@
-# Library and groups
+---
+title: Library and groups
+template: features.html
+feature_navigation: Main features
+hide:
+- navigation
+- toc
+---
 
-The library contains All games, Favorites and Groups. Search and sorting apply to the open section.
+<div class="xn-profile-feature" data-feature-page="library">
 
-![All games library with search and sorting](assets/screenshots/library.webp)
+<header class="xn-feature-intro"><span class="xn-feature-eyebrow">Library and groups</span></header>
 
-## Create a group
+<section class="xn-feature-section" data-feature-section="all"><h1>Your whole library, together</h1><p>Browse All games and focus a cover to see the available actions. Open Details to inspect the game or More options to manage it. The controls at the top let you change the sorting.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Your whole library, together."><figure data-feature-frame><a href="../assets/features/library/01.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: All games"><img src="../assets/features/library/01.webp" alt="All games" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>All games</figcaption></figure></div></section>
 
-1. Open Groups and select Create group.
-2. Enter a name.
-3. Use the add tile to choose games.
+<section class="xn-feature-section" data-feature-section="search"><h1>Find your next game</h1><p>Open Search, enter part of a title and confirm. The grid shows matching games; clear the search to browse the full list again.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Find your next game."><figure data-feature-frame><a href="../assets/features/library/02.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Search"><img src="../assets/features/library/02.webp" alt="Search" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Search</figcaption></figure><figure data-feature-frame><a href="../assets/features/library/03.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Filtered results"><img src="../assets/features/library/03.webp" alt="Filtered results" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Filtered results</figcaption></figure></div></section>
 
-You can also use `More options > Add to a group` from game details. Removing a group from Home does not delete it from the library.
+<section class="xn-feature-section" data-feature-section="create"><h1>Give your collection a name</h1><p>Open Groups, choose Create a group and enter a name. Build a collection around a genre, a series or whatever you want to play next.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Give your collection a name."><figure data-feature-frame><a href="../assets/features/library/04.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Groups"><img src="../assets/features/library/04.webp" alt="Groups" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Groups</figcaption></figure><figure data-feature-frame><a href="../assets/features/library/05.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Name the group"><img src="../assets/features/library/05.webp" alt="Name the group" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Name the group</figcaption></figure></div></section>
 
-![Populated group in the X-Nite library](assets/screenshots/groups.webp)
+<section class="xn-feature-section" data-feature-section="edit"><h1>Choose what belongs</h1><p>Mark the games you want in the group. Use the selected-items view to review the collection, then choose Save to apply additions and removals. Cancel leaves the saved group unchanged.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Choose what belongs."><figure data-feature-frame><a href="../assets/features/library/06.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Choose games"><img src="../assets/features/library/06.webp" alt="Choose games" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Choose games</figcaption></figure><figure data-feature-frame><a href="../assets/features/library/07.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Review selection"><img src="../assets/features/library/07.webp" alt="Review selection" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Review selection</figcaption></figure><figure data-feature-frame><a href="../assets/features/library/08.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Saved group"><img src="../assets/features/library/08.webp" alt="Saved group" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Saved group</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="pin"><h1>Bring a group to Home</h1><p>Use the home icon beside the game count to pin or unpin the group. Unpinning only removes its shortcut from Home; the group stays in the library.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Bring a group to Home."><figure data-feature-frame><a href="../assets/features/library/09.webp" data-guide-image data-close-label="Close image" aria-label="Enlarge image: Pin or unpin"><img src="../assets/features/library/09.webp" alt="Pin or unpin" width="596" height="304" loading="lazy" decoding="async"></a><figcaption>Pin or unpin</figcaption></figure></div></section>
+
+</div>

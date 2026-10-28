@@ -1,8 +1,24 @@
-# Raccolta e gruppi
-La raccolta contiene Tutti, Preferiti e Gruppi. Ricerca e ordinamento si applicano alla sezione aperta.
+---
+title: Raccolta e gruppi
+template: features.html
+feature_navigation: Funzionalità principali
+hide:
+- navigation
+- toc
+---
 
-<img src="../../assets/screenshots/library.webp" alt="Raccolta di tutti i giochi con ricerca e ordinamento">
+<div class="xn-profile-feature" data-feature-page="library">
 
-Apri Gruppi, scegli Crea gruppo, inserisci un nome e usa il riquadro Aggiungi. Puoi anche usare `Altre opzioni > Aggiungi a un gruppo` dai dettagli del gioco.
+<header class="xn-feature-intro"><span class="xn-feature-eyebrow">Raccolta e gruppi</span></header>
 
-<img src="../../assets/screenshots/groups.webp" alt="Gruppo popolato nella raccolta X-Nite">
+<section class="xn-feature-section" data-feature-section="all"><h1>Tutta la tua raccolta, insieme</h1><p>Esplora Tutti i giochi e seleziona una copertina per vedere le azioni. Apri Dettagli per conoscere il gioco o Altre opzioni per gestirlo. I controlli superiori consentono di cambiare l’ordinamento.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Tutta la tua raccolta, insieme."><figure data-feature-frame><a href="../../assets/features/library/01.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Tutti i giochi"><img src="../../assets/features/library/01.webp" alt="Tutti i giochi" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Tutti i giochi</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="search"><h1>Trova il tuo prossimo gioco</h1><p>Apri Cerca, digita parte del titolo e conferma. La griglia mostra i risultati; cancella la ricerca per tornare all’elenco completo.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Trova il tuo prossimo gioco."><figure data-feature-frame><a href="../../assets/features/library/02.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Cerca"><img src="../../assets/features/library/02.webp" alt="Cerca" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Cerca</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/03.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Risultati filtrati"><img src="../../assets/features/library/03.webp" alt="Risultati filtrati" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Risultati filtrati</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="create"><h1>Dai un nome alla tua collezione</h1><p>Apri Gruppi, scegli Crea un gruppo e digita un nome. Riunisci i giochi per genere, serie o in base a cosa vuoi giocare dopo.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Dai un nome alla tua collezione."><figure data-feature-frame><a href="../../assets/features/library/04.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Gruppi"><img src="../../assets/features/library/04.webp" alt="Gruppi" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Gruppi</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/05.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Nome del gruppo"><img src="../../assets/features/library/05.webp" alt="Nome del gruppo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Nome del gruppo</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="edit"><h1>Scegli cosa includere</h1><p>Seleziona i giochi del gruppo. Controlla gli elementi selezionati, poi scegli Salva per applicare aggiunte e rimozioni. Annulla mantiene il gruppo salvato senza modifiche.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Scegli cosa includere."><figure data-feature-frame><a href="../../assets/features/library/06.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Scegli giochi"><img src="../../assets/features/library/06.webp" alt="Scegli giochi" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Scegli giochi</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/07.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Controlla selezione"><img src="../../assets/features/library/07.webp" alt="Controlla selezione" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Controlla selezione</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/08.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Gruppo salvato"><img src="../../assets/features/library/08.webp" alt="Gruppo salvato" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Gruppo salvato</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="pin"><h1>Porta un gruppo nella Home</h1><p>Usa l’icona della casa accanto al numero di giochi per fissare o rimuovere il gruppo dalla Home. La rimozione riguarda solo il collegamento: il gruppo resta nella raccolta.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Porta un gruppo nella Home."><figure data-feature-frame><a href="../../assets/features/library/09.webp" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci immagine: Fissa o rimuovi"><img src="../../assets/features/library/09.webp" alt="Fissa o rimuovi" width="596" height="304" loading="lazy" decoding="async"></a><figcaption>Fissa o rimuovi</figcaption></figure></div></section>
+
+</div>

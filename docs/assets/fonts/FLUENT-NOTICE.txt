@@ -1,0 +1,5 @@
+Fluent System Icons Regular — Microsoft Corporation
+https://github.com/microsoft/fluentui-system-icons
+Source commit: 82ecf7cbdb43684403c7125efa160be04a33dca5
+Subset of the 16px regular chevron down, up, left and right glyphs, generated with fontTools.
+License: MIT; see FLUENT-LICENSE.txt.

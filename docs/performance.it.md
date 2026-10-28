@@ -1,7 +1,12 @@
-# Prestazioni
-- Mantieni aggiornati Playnite, driver grafici e integrazioni.
-- Evita immagini molto più grandi della risoluzione dello schermo.
-- Attendi il primo caricamento di copertine e obiettivi prima del confronto.
-- Indica risoluzione, GPU e dimensione della raccolta nei report.
+---
+title: Prestazioni
+template: faq.html
+hide:
+- navigation
+- toc
+- footer
+search:
+  exclude: true
+---
 
-Non eliminare i dati dell'estensione: contengono i profili.
+<a href="../help/#performance" data-guide-redirect>Aiuto e domande frequenti</a>
