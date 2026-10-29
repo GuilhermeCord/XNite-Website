@@ -232,6 +232,14 @@ plugins:
         19. Finish setup: 19. Completare la configurazione
 nav:
 - Home: index.md
+- Main features:
+  - Home and pinned games: home-and-pinned-games.md
+  - Library and groups: library-and-groups.md
+  - Xbox menu: hub-and-friends.md
+  - Profiles: profiles.md
+  - Achievements: achievements.md
+  - Quick Resume: quick-resume.md
+  - Controller and navigation: controller.md
 - Installation guide:
   - Prepare Playnite:
     - 01. Download Playnite: installation/01-download-playnite.md
@@ -256,14 +264,6 @@ nav:
     - 17. Choose your color: installation/22-profile-color.md
     - 18. Choose your main background: installation/23-profile-background.md
     - 19. Finish setup: installation/24-finish-profile.md
-- Main features:
-  - Home and pinned games: home-and-pinned-games.md
-  - Library and groups: library-and-groups.md
-  - Xbox menu: hub-and-friends.md
-  - Profiles: profiles.md
-  - Achievements: achievements.md
-  - Quick Resume: quick-resume.md
-  - Controller and navigation: controller.md
 - Help: help.md
 markdown_extensions:
 - admonition
