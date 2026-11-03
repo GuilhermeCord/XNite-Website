@@ -1,12 +1,26 @@
-# Conquistas
+---
+title: Conquistas
+template: features.html
+feature_navigation: Principais recursos
+hide:
+- navigation
+- toc
+---
 
-O Hub apresenta progresso por jogo, conquistas obtidas e bloqueadas, raridade, Collection Score e Prestige Score quando esses dados estão disponíveis nas integrações instaladas.
+<div class="xn-profile-feature" data-feature-page="achievements">
 
-1. Abra o Hub.
-2. Entre em seu perfil ou no perfil de um amigo.
-3. Abra Jogos.
-4. Escolha um jogo para ver suas conquistas.
+<header class="xn-feature-intro"><span class="xn-feature-eyebrow">Conquistas</span></header>
 
-As notificações de desbloqueio seguem o idioma e a cor do perfil ativo.
+<section class="xn-feature-section" data-feature-section="notifications"><h1>Notificações de conquistas</h1><p>Veja as notificações de cada raridade.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Notificações de conquistas"><figure data-feature-frame><div class="xn-feature-video"><video playsinline preload="metadata" controls src="../../assets/features/achievements/notifications-2x.mp4?v=2"></video><button type="button" class="xn-video-toggle" aria-label="Reproduzir ou pausar vídeo">▶</button></div><figcaption>Notificações e raridades</figcaption></figure></div></section>
 
-<img src="../../assets/screenshots/achievement-notification.webp" alt="Notificação localizada de conquista sobre a Home do X-Nite">
+<section class="xn-feature-section" data-feature-section="progress"><h1>Cada jogo, um pouco mais longe</h1><p>Abra Jogos no seu perfil para explorar os jogos com conquistas. Cada linha mostra progresso, quantidade de conquistas e Gamescore, ajudando a escolher o que conhecer a seguir.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Cada jogo, um pouco mais longe."><figure data-feature-frame><a href="../../assets/features/achievements/01.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Jogos e progresso"><img src="../../assets/features/achievements/01.webp" alt="Jogos e progresso" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Jogos e progresso</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="details"><h1>Veja o que você desbloqueou</h1><p>Abra um jogo para consultar suas conquistas, datas de desbloqueio, raridade e pontos. Use os filtros, a ordenação e a busca na parte superior para explorar a listagem.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Veja o que você desbloqueou."><figure data-feature-frame><a href="../../assets/features/achievements/02.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Conquistas do jogo"><img src="../../assets/features/achievements/02.webp" alt="Conquistas do jogo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Conquistas do jogo</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="recent"><h1>Suas conquistas mais recentes</h1><p>Conquistas recentes reúne seus últimos desbloqueios de diferentes jogos. Explore a lista para rever o que conquistou e quando.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Suas conquistas mais recentes."><figure data-feature-frame><a href="../../assets/features/achievements/03.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Conquistas recentes"><img src="../../assets/features/achievements/03.webp" alt="Conquistas recentes" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Conquistas recentes</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="friends"><h1>Conheça o progresso dos amigos</h1><p>Abra o perfil completo de um amigo para ver sua visão geral, atividades recentes e jogos. Na guia Jogos, consulte o progresso e as conquistas recentes e abra um jogo para conferir os desbloqueios. As informações disponíveis dependem dos dados que a Steam permite acessar.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Conheça o progresso dos amigos."><figure data-feature-frame><a href="../../assets/features/achievements/04.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Perfil do amigo"><img src="../../assets/features/achievements/04.webp" alt="Perfil do amigo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Perfil do amigo</figcaption></figure><figure data-feature-frame><a href="../../assets/features/achievements/05.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Atividade social"><img src="../../assets/features/achievements/05.webp" alt="Atividade social" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Atividade social</figcaption></figure><figure data-feature-frame><a href="../../assets/features/achievements/06.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Jogos e progresso"><img src="../../assets/features/achievements/06.webp" alt="Jogos e progresso" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Jogos e progresso</figcaption></figure><figure data-feature-frame><a href="../../assets/features/achievements/07.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Conquistas recentes"><img src="../../assets/features/achievements/07.webp" alt="Conquistas recentes" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Conquistas recentes</figcaption></figure><figure data-feature-frame><a href="../../assets/features/achievements/08.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Conquistas do jogo"><img src="../../assets/features/achievements/08.webp" alt="Conquistas do jogo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Conquistas do jogo</figcaption></figure></div></section>
+
+<section class="xn-feature-section" data-feature-section="leaderboard"><h1>Veja sua posição</h1><p>Abra a classificação de Gamescore no Hub para consultar as pontuações e posições disponíveis. Selecione um amigo para explorar seu perfil e progresso.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Veja sua posição."><figure data-feature-frame><a href="../../assets/features/achievements/09.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Classificação de Gamescore"><img class="xn-feature-image--portrait" src="../../assets/features/achievements/09.webp" alt="Classificação de Gamescore" width="929" height="1080" loading="lazy" decoding="async"></a><figcaption>Classificação de Gamescore</figcaption></figure></div></section>
+
+</div>

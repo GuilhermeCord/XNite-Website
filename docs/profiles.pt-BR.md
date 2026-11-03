@@ -1,21 +1,26 @@
-# Perfis
+---
+title: Perfis
+template: features.html
+feature_navigation: Principais recursos
+hide:
+- navigation
+- toc
+---
 
-Cada perfil mantém nome, avatar, cor, fundos, favoritos, grupos, jogos recentes, jogos fixados e preferências do Hub.
+<div class="xn-profile-feature">
 
-<img src="../../assets/screenshots/profiles.webp" alt="Seletor com vários perfis">
+<header class="xn-feature-intro"><span class="xn-feature-eyebrow">Perfis</span></header>
 
-<img src="../../assets/screenshots/profile-customization.webp" alt="Personalização de perfil com avatar, cor e opções de fundo">
+<section class="xn-feature-section"><h1>Escolha quem vai jogar</h1><p>Abra o seletor e escolha um perfil. A Home, os favoritos, os jogos fixados e os grupos acompanham o perfil selecionado.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Escolha quem vai jogar"><figure data-feature-frame><a href="../../assets/features/profiles/01.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Escolha quem vai jogar"><img src="../../assets/features/profiles/01.webp" alt="Escolha quem vai jogar" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Escolha quem vai jogar</figcaption></figure></div></section>
 
-## Alterar aparência
+<section class="xn-feature-section"><h1>Conheça seu perfil</h1><p>Boas-vindas reúne a visão geral do perfil. Social mostra as atividades recentes; Jogos permite explorar jogos e conquistas, comparar o progresso e buscar na listagem atual.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Conheça seu perfil"><figure data-feature-frame><a href="../../assets/features/profiles/02.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Boas-vindas"><img src="../../assets/features/profiles/02.webp" alt="Boas-vindas" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Boas-vindas</figcaption></figure><figure data-feature-frame><a href="../../assets/features/profiles/03.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Social"><img src="../../assets/features/profiles/03.webp" alt="Social" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Social</figcaption></figure><figure data-feature-frame><a href="../../assets/features/profiles/04.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Jogos"><img src="../../assets/features/profiles/04.webp" alt="Jogos" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Jogos</figcaption></figure></div></section>
 
-1. Abra o Hub.
-2. Entre em seu perfil.
-3. Escolha a área de personalização.
-4. Selecione avatar, cor, fundo principal ou fundo do perfil.
-5. Use X para editar um item importado quando a opção estiver disponível.
+<section class="xn-feature-section"><h1>Deixe do seu jeito</h1><p>Abra Personalizar perfil para mudar nome, avatar, cor e fundos. Selecione Concluído ao terminar.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Deixe do seu jeito"><figure data-feature-frame><a href="../../assets/features/profiles/05.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Deixe do seu jeito"><img src="../../assets/features/profiles/05.webp" alt="Deixe do seu jeito" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Deixe do seu jeito</figcaption></figure></div></section>
 
-## Trocar de perfil
+<section class="xn-feature-section"><h1>Escolha seu avatar</h1><p>Use uma imagem predefinida ou importe uma foto. Após importar, ajuste o enquadramento antes de salvar. Você pode editar novamente uma imagem importada quando a opção Editar estiver disponível.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Escolha seu avatar"><figure data-feature-frame><a href="../../assets/features/profiles/06.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Escolher avatar"><img src="../../assets/features/profiles/06.webp" alt="Escolher avatar" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Escolher avatar</figcaption></figure><figure data-feature-frame><a href="../../assets/features/profiles/07.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Importar foto"><img src="../../assets/features/profiles/07.webp" alt="Importar foto" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Importar foto</figcaption></figure><figure data-feature-frame><a href="../../assets/features/profiles/08.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Ajustar foto"><img src="../../assets/features/profiles/08.webp" alt="Ajustar foto" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Ajustar foto</figcaption></figure></div></section>
 
-Abra o seletor de perfis, escolha a pessoa e confirme. A Home e a Biblioteca são atualizadas para o perfil escolhido.
+<section class="xn-feature-section"><h1>Encontre sua cor</h1><p>Escolha uma cor de destaque ou crie uma cor personalizada. Ajuste matiz, saturação e luminosidade e salve. Use Editar para refinar uma cor personalizada depois.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Encontre sua cor"><figure data-feature-frame><a href="../../assets/features/profiles/09.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Cores de destaque"><img src="../../assets/features/profiles/09.webp" alt="Cores de destaque" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Cores de destaque</figcaption></figure><figure data-feature-frame><a href="../../assets/features/profiles/10.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Cor personalizada"><img src="../../assets/features/profiles/10.webp" alt="Cor personalizada" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Cor personalizada</figcaption></figure></div></section>
 
-<img src="../../assets/screenshots/my-profile.webp" alt="Visão geral do perfil pessoal com estatísticas de conquistas">
+<section class="xn-feature-section"><h1>Dois fundos, seu estilo</h1><p>O fundo principal aparece na Home; o fundo do perfil aparece no seu perfil. Escolha uma opção predefinida ou importe sua mídia. Os itens importados oferecem edição quando disponível.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Dois fundos, seu estilo"><figure data-feature-frame><a href="../../assets/features/profiles/11.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Fundo principal"><img src="../../assets/features/profiles/11.webp" alt="Fundo principal" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Fundo principal</figcaption></figure><figure data-feature-frame><a href="../../assets/features/profiles/12.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Fundo do perfil"><img src="../../assets/features/profiles/12.webp" alt="Fundo do perfil" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Fundo do perfil</figcaption></figure></div></section>
+
+<aside class="xn-feature-first-launch"><h2>Primeira vez por aqui?</h2><p>Siga Primeira inicialização no guia de instalação para criar seu primeiro perfil.</p><a href="../installation/19-first-launch/">Abrir primeira inicialização</a></aside></div>

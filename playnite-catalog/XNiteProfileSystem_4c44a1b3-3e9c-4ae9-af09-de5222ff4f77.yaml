@@ -1,0 +1,14 @@
+AddonId: 'XNiteProfileSystem_4c44a1b3-3e9c-4ae9-af09-de5222ff4f77'
+Type: Generic
+Name: 'X-Nite Profile System'
+Author: 'Cordeiro'
+ShortDescription: 'Companion extension that powers profiles and services used by XNite.'
+InstallerManifestUrl: https://raw.githubusercontent.com/GuilhermeCord/XNite-Distribution/main/manifests/extension-installer.yaml
+SourceUrl: https://github.com/GuilhermeCord/XNite-Enhanced
+Description: X-Nite Profile System provides the profile, personalization, localization, achievement notification and navigation services used by X-Nite - Xbox Experience for Playnite. Install this extension before installing and activating the X-Nite Fullscreen theme.
+Tags: ['fullscreen', 'profiles', 'localization', 'achievements', 'controller']
+Links:
+  GitHub: https://github.com/GuilhermeCord/XNite-Enhanced
+  Guide: https://GuilhermeCord.github.io/XNite-Distribution/
+  Support: https://github.com/GuilhermeCord/XNite-Enhanced/issues
+IconUrl: https://raw.githubusercontent.com/GuilhermeCord/XNite-Distribution/main/docs/assets/xbox-logo.png

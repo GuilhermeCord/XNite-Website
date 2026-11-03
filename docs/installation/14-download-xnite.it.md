@@ -1,24 +1,33 @@
 ---
-title: "14. Scaricare X-Nite"
+title: "10. Scaricare X-Nite"
 hide:
-  - toc
-  - footer
+- navigation
+- toc
+- footer
+template: guide.html
 ---
 
-<nav class="xn-guide-stages" aria-label="Guida all’installazione"><a href="../01-download-playnite/"><span>1</span>Preparare Playnite</a><a href="../04-playnite-settings/"><span>2</span>Configurare le integrazioni</a><a href="../14-download-xnite/" aria-current="step"><span>3</span>Installare e attivare</a></nav>
-
-<div class="xn-guide-progress"><span>Passo 14 di 18</span><progress value="14" max="18" aria-label="Passo 14 di 18"></progress></div>
-
-# Scaricare X-Nite
-
-Ottieni tema ed estensione dal canale **downloads** X-Nite mostrato o dalle [Releases](https://github.com/GuilhermeCord/XNite-Distribution/releases), quando disponibili. Usa la stessa versione ed estrai l’archivio. Gli extra non sostituiscono i due pacchetti.
-
+<div class="xn-tutorial" data-guide-tutorial data-prev-image="Immagine precedente" data-next-image="Immagine successiva →" data-image-label="Immagine" data-of-label="di" markdown="1">
+<nav class="xn-guide-stages" aria-label="Guida all’installazione"><a href="../01-download-playnite/"><span>1</span>Preparare Playnite</a><a href="../04-playnite-settings/"><span>2</span>Configurare le integrazioni</a><a href="../14-download-xnite/" aria-current="step"><span>3</span>Installare e attivare</a><a href="../19-first-launch/"><span>4</span>Primo avvio</a></nav>
+<div class="xn-guide-progress"><span>10 / 20</span><progress value="10" max="20" aria-label="Passo 10 di 20"></progress></div>
+<div class="xn-tutorial__heading"><h1 tabindex="-1">Scaricare X-Nite</h1><label class="xn-step-picker">Tutti i passaggi<select data-guide-step-select aria-label="Tutti i passaggi"><option value="../01-download-playnite/">01. Scaricare Playnite</option><option value="../02-install-playnite/">02. Installare Playnite</option><option value="../03-add-ons/">03. Installare le integrazioni</option><option value="../04-playnite-settings/">04. Verificare le impostazioni di Playnite</option><option value="../05-metadata/">05. Configurare immagini e metadati</option><option value="../06-achievements/">06. Collegare Playnite Achievements</option><option value="../07-video-tools/">07. Preparare gli strumenti video</option><option value="../10-music-profile/">08. Configurare la musica</option><option value="../09-download-metadata/">09. Scaricare i metadati della libreria</option><option value="../14-download-xnite/" selected>10. Scaricare X-Nite</option><option value="../15-installation-files/">11. Identificare i due pacchetti</option><option value="../16-install-extension/">12. Installare X-Nite Profile System</option><option value="../17-install-theme/">13. Installare il tema Fullscreen</option><option value="../18-activate-theme/">14. Attivare X-Nite e terminare</option><option value="../19-first-launch/">15. Preparare il primo avvio</option><option value="../20-create-profile/">16. Creare il primo profilo</option><option value="../21-profile-avatar/">17. Scegliere l’avatar</option><option value="../22-profile-color/">18. Scegliere il colore</option><option value="../23-profile-background/">19. Scegliere lo sfondo principale</option><option value="../24-finish-profile/">20. Completare la configurazione</option></select></label></div>
+<div class="xn-tutorial__panel" markdown="1">
+<div class="xn-tutorial__visual">
 <div class="xn-guide-gallery">
-<figure><a class="xn-guide-image" href="../../../assets/installation/14-download-xnite-01.png" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci schermata: Scaricare X-Nite (1/1)"><img src="../../../assets/installation/14-download-xnite-01.png" alt="Scaricare X-Nite — 1/1" loading="lazy" decoding="async"></a><figcaption>Ingrandisci schermata: Scaricare X-Nite (1/1)</figcaption></figure>
+<figure data-guide-frame><a class="xn-guide-image" href="../../../assets/installation/10.1-download-xnite-01.png" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci schermata: Scaricare X-Nite (1/1)"><img src="../../../assets/installation/10.1-download-xnite-01.png" alt="Scaricare X-Nite — 1/1" loading="eager" decoding="async"></a></figure>
 </div>
+<div class="xn-tutorial__dots" data-guide-dots></div>
+</div>
+<div class="xn-tutorial__notes" tabindex="0" markdown="1">
+Ottieni tema ed estensione dal canale **downloads** X-Nite mostrato. Usa la stessa versione ed estrai l’archivio. Gli extra non sostituiscono i due pacchetti.
 
 !!! success "Prima di continuare"
     Hai entrambi i pacchetti della stessa versione.
-
-[Precedente](13-music-pauses.md){ .md-button }
-[Successivo →](15-installation-files.md){ .md-button .md-button--primary }
+</div>
+</div>
+<div class="xn-tutorial__footer" markdown="1">
+[Precedente](09-download-metadata.md){ .md-button data-guide-prev="true" }
+<span class="xn-tutorial__counter" data-guide-counter role="status" aria-live="polite">1 / 1</span>
+[Successivo →](15-installation-files.md){ .md-button .md-button--primary data-guide-next="true" }
+</div>
+</div>

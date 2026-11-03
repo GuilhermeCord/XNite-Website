@@ -1,18 +1,24 @@
-# Biblioteca e grupos
+---
+title: Biblioteca e grupos
+template: features.html
+feature_navigation: Principais recursos
+hide:
+- navigation
+- toc
+---
 
-A Biblioteca possui as seções Todos, Favoritos e Grupos. Ordenação e busca atuam apenas na seção aberta.
+<div class="xn-profile-feature" data-feature-page="library">
 
-<img src="../../assets/screenshots/library.webp" alt="Biblioteca Todos com busca e ordenação">
+<header class="xn-feature-intro"><span class="xn-feature-eyebrow">Biblioteca e grupos</span></header>
 
-## Criar e preencher um grupo
+<section class="xn-feature-section" data-feature-section="all"><h1>Sua biblioteca inteira, reunida</h1><p>Explore Todos os jogos e focalize uma capa para ver as ações disponíveis. Abra Detalhes para conhecer o jogo ou Mais opções para gerenciá-lo. Os controles superiores permitem mudar a ordenação.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Sua biblioteca inteira, reunida."><figure data-feature-frame><a href="../../assets/features/library/01.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Todos os jogos"><img src="../../assets/features/library/01.webp" alt="Todos os jogos" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Todos os jogos</figcaption></figure></div></section>
 
-1. Abra Grupos.
-2. Selecione Criar grupo.
-3. Informe o nome.
-4. Use o card de adicionar para escolher jogos.
+<section class="xn-feature-section" data-feature-section="search"><h1>Encontre seu próximo jogo</h1><p>Abra Buscar, digite parte do título e confirme. A grade mostra os jogos correspondentes; limpe a busca para voltar à lista completa.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Encontre seu próximo jogo."><figure data-feature-frame><a href="../../assets/features/library/02.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Buscar"><img src="../../assets/features/library/02.webp" alt="Buscar" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Buscar</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/03.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Resultados filtrados"><img src="../../assets/features/library/03.webp" alt="Resultados filtrados" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Resultados filtrados</figcaption></figure></div></section>
 
-Também é possível abrir os detalhes de um jogo, entrar em Mais opções e selecionar `Adicionar a um grupo`.
+<section class="xn-feature-section" data-feature-section="create"><h1>Dê um nome à sua coleção</h1><p>Entre em Grupos, escolha Criar um grupo e digite um nome. Reúna jogos por gênero, série ou pelo que você quer jogar a seguir.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Dê um nome à sua coleção."><figure data-feature-frame><a href="../../assets/features/library/04.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Grupos"><img src="../../assets/features/library/04.webp" alt="Grupos" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Grupos</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/05.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Nome do grupo"><img src="../../assets/features/library/05.webp" alt="Nome do grupo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Nome do grupo</figcaption></figure></div></section>
 
-Remover um grupo da Home não apaga o grupo da Biblioteca.
+<section class="xn-feature-section" data-feature-section="edit"><h1>Escolha o que faz parte</h1><p>Marque os jogos que deseja no grupo. Use a visualização de itens selecionados para revisar a coleção e escolha Salvar para aplicar inclusões e remoções. Cancelar mantém o grupo salvo sem alterações.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Escolha o que faz parte."><figure data-feature-frame><a href="../../assets/features/library/06.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Selecionar jogos"><img src="../../assets/features/library/06.webp" alt="Selecionar jogos" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Selecionar jogos</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/07.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Revisar seleção"><img src="../../assets/features/library/07.webp" alt="Revisar seleção" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Revisar seleção</figcaption></figure><figure data-feature-frame><a href="../../assets/features/library/08.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Grupo salvo"><img src="../../assets/features/library/08.webp" alt="Grupo salvo" width="1920" height="1080" loading="lazy" decoding="async"></a><figcaption>Grupo salvo</figcaption></figure></div></section>
 
-<img src="../../assets/screenshots/groups.webp" alt="Grupo preenchido na Biblioteca do X-Nite">
+<section class="xn-feature-section" data-feature-section="pin"><h1>Leve um grupo para o Início</h1><p>Use o ícone de casa ao lado da quantidade de jogos para fixar ou desafixar o grupo. Desafixar remove apenas seu atalho no Início; o grupo continua na biblioteca.</p><div class="xn-feature-gallery" data-feature-gallery aria-label="Leve um grupo para o Início."><figure data-feature-frame><a href="../../assets/features/library/09.webp" data-guide-image data-close-label="Fechar imagem" aria-label="Ampliar imagem: Fixar ou desafixar"><img src="../../assets/features/library/09.webp" alt="Fixar ou desafixar" width="596" height="304" loading="lazy" decoding="async"></a><figcaption>Fixar ou desafixar</figcaption></figure></div></section>
+
+</div>

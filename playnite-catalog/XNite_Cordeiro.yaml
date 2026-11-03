@@ -1,0 +1,15 @@
+AddonId: 'XNite_Cordeiro'
+Type: ThemeFullscreen
+Name: 'X-Nite - Xbox Experience for Playnite'
+Author: 'Cordeiro'
+ShortDescription: 'An Xbox-inspired, controller-first Fullscreen experience for Playnite.'
+InstallerManifestUrl: https://raw.githubusercontent.com/GuilhermeCord/XNite-Distribution/main/manifests/theme-installer.yaml
+SourceUrl: https://github.com/GuilhermeCord/XNite-Enhanced
+Description: X-Nite transforms Playnite Fullscreen into an Xbox-inspired experience built for controllers and TVs. Create personal profiles with independent avatars, colors and backgrounds; organize games into groups; customize the Home screen and pinned games; browse game details and achievements; and manage the experience through integrated, localized settings. X-Nite Profile System is required and should be installed first.
+Tags: ['xbox', 'fullscreen', 'controller', 'profiles', 'dashboard', 'tv']
+Links:
+  GitHub: https://github.com/GuilhermeCord/XNite-Enhanced
+  Guide: https://GuilhermeCord.github.io/XNite-Distribution/
+  Support: https://github.com/GuilhermeCord/XNite-Enhanced/issues
+  Credits: https://github.com/GuilhermeCord/XNite-Distribution/blob/main/CREDITS.md
+IconUrl: https://raw.githubusercontent.com/GuilhermeCord/XNite-Distribution/main/docs/assets/xbox-logo.png

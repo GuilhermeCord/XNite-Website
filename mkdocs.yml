@@ -19,7 +19,7 @@ theme:
   custom_dir: overrides
   font: false
 extra_css:
-- stylesheets/extra.css
+- stylesheets/extra.css?v=20261027-achievements
 plugins:
 - search
 - i18n:
@@ -45,18 +45,20 @@ plugins:
         05. Configure artwork and metadata: 05. Configure artwork and metadata
         06. Connect Playnite Achievements: 06. Connect Playnite Achievements
         07. Set up trailer tools: 07. Set up trailer tools
-        08. Enable game logos: 08. Enable game logos
-        09. Create and apply the SteamGridDB key: 09. Create and apply the SteamGridDB
-          key
-        10. Choose a music profile: 10. Choose a music profile
-        11. Review music playback: 11. Review music playback
-        12. Choose the default music source: 12. Choose the default music source
-        13. Set music pause behaviour: 13. Set music pause behaviour
-        14. Download X-Nite: 14. Download X-Nite
-        15. Identify the two packages: 15. Identify the two packages
-        16. Install X-Nite Profile System: 16. Install X-Nite Profile System
-        17. Install the Fullscreen theme: 17. Install the Fullscreen theme
-        18. Activate X-Nite and finish: 18. Activate X-Nite and finish
+        08. Configure music: 08. Configure music
+        09. Download library metadata: 09. Download library metadata
+        10. Download X-Nite: 10. Download X-Nite
+        11. Identify the two packages: 11. Identify the two packages
+        12. Install X-Nite Profile System: 12. Install X-Nite Profile System
+        13. Install the Fullscreen theme: 13. Install the Fullscreen theme
+        14. Activate X-Nite and finish: 14. Activate X-Nite and finish
+        First launch: First launch
+        15. Prepare the first launch: 15. Prepare the first launch
+        16. Create your first profile: 16. Create your first profile
+        17. Choose your avatar: 17. Choose your avatar
+        18. Choose your color: 18. Choose your color
+        19. Choose your main background: 19. Choose your main background
+        20. Finish setup: 20. Finish setup
     - locale: pt-BR
       name: Português
       build: true
@@ -71,7 +73,7 @@ plugins:
         Home and pinned games: Home e jogos fixados
         Library and groups: Biblioteca e grupos
         Achievements: Conquistas
-        Settings: Configurações
+        Xbox menu: Menu Xbox
         Help: Ajuda
         Performance: Desempenho
         Troubleshooting: Problemas comuns
@@ -87,17 +89,20 @@ plugins:
         05. Configure artwork and metadata: 05. Configurar artes e metadados
         06. Connect Playnite Achievements: 06. Conectar o Playnite Achievements
         07. Set up trailer tools: 07. Preparar as ferramentas de vídeo
-        08. Enable game logos: 08. Ativar as logos dos jogos
-        09. Create and apply the SteamGridDB key: 09. Criar e aplicar a chave SteamGridDB
-        10. Choose a music profile: 10. Escolher o perfil de música
-        11. Review music playback: 11. Revisar a reprodução de música
-        12. Choose the default music source: 12. Escolher a fonte de música padrão
-        13. Set music pause behaviour: 13. Definir quando a música pausa
-        14. Download X-Nite: 14. Baixar o X-Nite
-        15. Identify the two packages: 15. Identificar os dois pacotes
-        16. Install X-Nite Profile System: 16. Instalar o X-Nite Profile System
-        17. Install the Fullscreen theme: 17. Instalar o tema Fullscreen
-        18. Activate X-Nite and finish: 18. Ativar o X-Nite e concluir
+        08. Configure music: 08. Configurar música
+        09. Download library metadata: 09. Baixar metadados da biblioteca
+        10. Download X-Nite: 10. Baixar o X-Nite
+        11. Identify the two packages: 11. Identificar os dois pacotes
+        12. Install X-Nite Profile System: 12. Instalar o X-Nite Profile System
+        13. Install the Fullscreen theme: 13. Instalar o tema Fullscreen
+        14. Activate X-Nite and finish: 14. Ativar o X-Nite e concluir
+        First launch: Primeira inicialização
+        15. Prepare the first launch: 15. Preparar a primeira inicialização
+        16. Create your first profile: 16. Criar o primeiro perfil
+        17. Choose your avatar: 17. Escolher o avatar
+        18. Choose your color: 18. Escolher a cor
+        19. Choose your main background: 19. Escolher o fundo principal
+        20. Finish setup: 20. Concluir a configuração
     - locale: es
       name: Español
       build: true
@@ -112,7 +117,7 @@ plugins:
         Home and pinned games: Inicio y juegos fijados
         Library and groups: Biblioteca y grupos
         Achievements: Logros
-        Settings: Configuración
+        Xbox menu: Menú Xbox
         Help: Ayuda
         Performance: Rendimiento
         Troubleshooting: Problemas comunes
@@ -128,17 +133,20 @@ plugins:
         05. Configure artwork and metadata: 05. Configurar imágenes y metadatos
         06. Connect Playnite Achievements: 06. Conectar Playnite Achievements
         07. Set up trailer tools: 07. Preparar las herramientas de vídeo
-        08. Enable game logos: 08. Activar los logos de juegos
-        09. Create and apply the SteamGridDB key: 09. Crear y aplicar la clave SteamGridDB
-        10. Choose a music profile: 10. Elegir el perfil de música
-        11. Review music playback: 11. Revisar la reproducción musical
-        12. Choose the default music source: 12. Elegir la fuente musical
-        13. Set music pause behaviour: 13. Definir cuándo pausar la música
-        14. Download X-Nite: 14. Descargar X-Nite
-        15. Identify the two packages: 15. Identificar los dos paquetes
-        16. Install X-Nite Profile System: 16. Instalar X-Nite Profile System
-        17. Install the Fullscreen theme: 17. Instalar el tema Fullscreen
-        18. Activate X-Nite and finish: 18. Activar X-Nite y finalizar
+        08. Configure music: 08. Configurar la música
+        09. Download library metadata: 09. Descargar metadatos de la biblioteca
+        10. Download X-Nite: 10. Descargar X-Nite
+        11. Identify the two packages: 11. Identificar los dos paquetes
+        12. Install X-Nite Profile System: 12. Instalar X-Nite Profile System
+        13. Install the Fullscreen theme: 13. Instalar el tema Fullscreen
+        14. Activate X-Nite and finish: 14. Activar X-Nite y finalizar
+        First launch: Primer inicio
+        15. Prepare the first launch: 15. Preparar el primer inicio
+        16. Create your first profile: 16. Crear tu primer perfil
+        17. Choose your avatar: 17. Elegir el avatar
+        18. Choose your color: 18. Elegir el color
+        19. Choose your main background: 19. Elegir el fondo principal
+        20. Finish setup: 20. Finalizar la configuración
     - locale: fr
       name: Français
       build: true
@@ -153,7 +161,7 @@ plugins:
         Home and pinned games: Accueil et jeux épinglés
         Library and groups: Bibliothèque et groupes
         Achievements: Succès
-        Settings: Paramètres
+        Xbox menu: Menu Xbox
         Help: Aide
         Performance: Performances
         Troubleshooting: Problèmes courants
@@ -169,17 +177,20 @@ plugins:
         05. Configure artwork and metadata: 05. Configurer les images et métadonnées
         06. Connect Playnite Achievements: 06. Connecter Playnite Achievements
         07. Set up trailer tools: 07. Préparer les outils vidéo
-        08. Enable game logos: 08. Activer les logos des jeux
-        09. Create and apply the SteamGridDB key: 09. Créer et utiliser la clé SteamGridDB
-        10. Choose a music profile: 10. Choisir le profil musical
-        11. Review music playback: 11. Vérifier la lecture musicale
-        12. Choose the default music source: 12. Choisir la source musicale
-        13. Set music pause behaviour: 13. Définir les pauses musicales
-        14. Download X-Nite: 14. Télécharger X-Nite
-        15. Identify the two packages: 15. Identifier les deux paquets
-        16. Install X-Nite Profile System: 16. Installer X-Nite Profile System
-        17. Install the Fullscreen theme: 17. Installer le thème Fullscreen
-        18. Activate X-Nite and finish: 18. Activer X-Nite et terminer
+        08. Configure music: 08. Configurer la musique
+        09. Download library metadata: 09. Télécharger les métadonnées de la bibliothèque
+        10. Download X-Nite: 10. Télécharger X-Nite
+        11. Identify the two packages: 11. Identifier les deux paquets
+        12. Install X-Nite Profile System: 12. Installer X-Nite Profile System
+        13. Install the Fullscreen theme: 13. Installer le thème Fullscreen
+        14. Activate X-Nite and finish: 14. Activer X-Nite et terminer
+        First launch: Premier démarrage
+        15. Prepare the first launch: 15. Préparer le premier démarrage
+        16. Create your first profile: 16. Créer votre premier profil
+        17. Choose your avatar: 17. Choisir votre avatar
+        18. Choose your color: 18. Choisir votre couleur
+        19. Choose your main background: 19. Choisir le fond principal
+        20. Finish setup: 20. Terminer la configuration
     - locale: it
       name: Italiano
       build: true
@@ -194,7 +205,7 @@ plugins:
         Home and pinned games: Home e giochi fissati
         Library and groups: Raccolta e gruppi
         Achievements: Obiettivi
-        Settings: Impostazioni
+        Xbox menu: Menu Xbox
         Help: Aiuto
         Performance: Prestazioni
         Troubleshooting: Problemi comuni
@@ -210,22 +221,31 @@ plugins:
         05. Configure artwork and metadata: 05. Configurare immagini e metadati
         06. Connect Playnite Achievements: 06. Collegare Playnite Achievements
         07. Set up trailer tools: 07. Preparare gli strumenti video
-        08. Enable game logos: 08. Attivare i loghi dei giochi
-        09. Create and apply the SteamGridDB key: 09. Creare e applicare la chiave
-          SteamGridDB
-        10. Choose a music profile: 10. Scegliere il profilo musicale
-        11. Review music playback: 11. Verificare la riproduzione musicale
-        12. Choose the default music source: 12. Scegliere la sorgente musicale
-        13. Set music pause behaviour: 13. Definire le pause della musica
-        14. Download X-Nite: 14. Scaricare X-Nite
-        15. Identify the two packages: 15. Identificare i due pacchetti
-        16. Install X-Nite Profile System: 16. Installare X-Nite Profile System
-        17. Install the Fullscreen theme: 17. Installare il tema Fullscreen
-        18. Activate X-Nite and finish: 18. Attivare X-Nite e terminare
+        08. Configure music: 08. Configurare la musica
+        09. Download library metadata: 09. Scaricare i metadati della libreria
+        10. Download X-Nite: 10. Scaricare X-Nite
+        11. Identify the two packages: 11. Identificare i due pacchetti
+        12. Install X-Nite Profile System: 12. Installare X-Nite Profile System
+        13. Install the Fullscreen theme: 13. Installare il tema Fullscreen
+        14. Activate X-Nite and finish: 14. Attivare X-Nite e terminare
+        First launch: Primo avvio
+        15. Prepare the first launch: 15. Preparare il primo avvio
+        16. Create your first profile: 16. Creare il primo profilo
+        17. Choose your avatar: 17. Scegliere l’avatar
+        18. Choose your color: 18. Scegliere il colore
+        19. Choose your main background: 19. Scegliere lo sfondo principale
+        20. Finish setup: 20. Completare la configurazione
 nav:
 - Home: index.md
+- Main features:
+  - Home and pinned games: home-and-pinned-games.md
+  - Library and groups: library-and-groups.md
+  - Xbox menu: hub-and-friends.md
+  - Profiles: profiles.md
+  - Achievements: achievements.md
+  - Quick Resume: quick-resume.md
+  - Controller and navigation: controller.md
 - Installation guide:
-  - Overview: install.md
   - Prepare Playnite:
     - 01. Download Playnite: installation/01-download-playnite.md
     - 02. Install Playnite: installation/02-install-playnite.md
@@ -235,36 +255,49 @@ nav:
     - 05. Configure artwork and metadata: installation/05-metadata.md
     - 06. Connect Playnite Achievements: installation/06-achievements.md
     - 07. Set up trailer tools: installation/07-video-tools.md
-    - 08. Enable game logos: installation/08-logos.md
-    - 09. Create and apply the SteamGridDB key: installation/09-steamgriddb-api.md
-    - 10. Choose a music profile: installation/10-music-profile.md
-    - 11. Review music playback: installation/11-music-playback.md
-    - 12. Choose the default music source: installation/12-default-music.md
-    - 13. Set music pause behaviour: installation/13-music-pauses.md
+    - 08. Configure music: installation/10-music-profile.md
+    - 09. Download library metadata: installation/09-download-metadata.md
   - Install and activate:
-    - 14. Download X-Nite: installation/14-download-xnite.md
-    - 15. Identify the two packages: installation/15-installation-files.md
-    - 16. Install X-Nite Profile System: installation/16-install-extension.md
-    - 17. Install the Fullscreen theme: installation/17-install-theme.md
-    - 18. Activate X-Nite and finish: installation/18-activate-theme.md
-- Start here:
-  - First setup: first-setup.md
-  - Controller and navigation: controller.md
-- Main features:
-  - Profiles: profiles.md
-  - Home and pinned games: home-and-pinned-games.md
-  - Library and groups: library-and-groups.md
-  - Achievements: achievements.md
-  - Settings: settings.md
-- Help:
-  - Performance: performance.md
-  - Troubleshooting: troubleshooting.md
+    - 10. Download X-Nite: installation/14-download-xnite.md
+    - 11. Identify the two packages: installation/15-installation-files.md
+    - 12. Install X-Nite Profile System: installation/16-install-extension.md
+    - 13. Install the Fullscreen theme: installation/17-install-theme.md
+    - 14. Activate X-Nite and finish: installation/18-activate-theme.md
+  - First launch:
+    - 15. Prepare the first launch: installation/19-first-launch.md
+    - 16. Create your first profile: installation/20-create-profile.md
+    - 17. Choose your avatar: installation/21-profile-avatar.md
+    - 18. Choose your color: installation/22-profile-color.md
+    - 19. Choose your main background: installation/23-profile-background.md
+    - 20. Finish setup: installation/24-finish-profile.md
+- Help: help.md
 markdown_extensions:
 - admonition
 - attr_list
 - tables
+- md_in_html
 extra_javascript:
-- javascripts/installation.js
+- javascripts/features.js?v=20261027-mobile-utf8
+- javascripts/installation.js?v=20261027-hub
+- javascripts/navigation.js?v=20261027-locale-fix
+- javascripts/tutorial.js?v=20261029-install-order
+- javascripts/faq.js?v=20261026-help-faq
 site_description: X-Nite — an Xbox-inspired Fullscreen experience for Playnite. Explore
   profiles, your library and the illustrated installation guide.
+extra:
+  generator: false
 
+
+
+
+
+
+
+
+
+
+
+
+
+hooks:
+- hooks/search_languages.py

@@ -1,26 +1,70 @@
 ---
 title: "06. Collegare Playnite Achievements"
 hide:
-  - toc
-  - footer
+- navigation
+- toc
+- footer
+template: guide.html
 ---
 
-<nav class="xn-guide-stages" aria-label="Guida all’installazione"><a href="../01-download-playnite/"><span>1</span>Preparare Playnite</a><a href="../04-playnite-settings/" aria-current="step"><span>2</span>Configurare le integrazioni</a><a href="../14-download-xnite/"><span>3</span>Installare e attivare</a></nav>
-
-<div class="xn-guide-progress"><span>Passo 6 di 18</span><progress value="6" max="18" aria-label="Passo 6 di 18"></progress></div>
-
-# Collegare Playnite Achievements
-
-Apri `Add-ons > Extension settings > Generic > Playnite Achievements`. Controlla **Sync & Updates**, abilita `Platforms > Steam`, usa **Sign in**, poi **Check**. Avvia una sincronizzazione. Questo account fornisce obiettivi e Gamescore; gli amici seguono separatamente l’account del client Steam.
-
+<div class="xn-tutorial" data-guide-tutorial data-prev-image="Immagine precedente" data-next-image="Immagine successiva →" data-image-label="Immagine" data-of-label="di" markdown="1">
+<nav class="xn-guide-stages" aria-label="Guida all’installazione"><a href="../01-download-playnite/"><span>1</span>Preparare Playnite</a><a href="../04-playnite-settings/" aria-current="step"><span>2</span>Configurare le integrazioni</a><a href="../14-download-xnite/"><span>3</span>Installare e attivare</a><a href="../19-first-launch/"><span>4</span>Primo avvio</a></nav>
+<div class="xn-guide-progress"><span>6 / 20</span><progress value="6" max="20" aria-label="Passo 6 di 20"></progress></div>
+<div class="xn-tutorial__heading"><h1 tabindex="-1">Collegare Playnite Achievements</h1><label class="xn-step-picker">Tutti i passaggi<select data-guide-step-select aria-label="Tutti i passaggi"><option value="../01-download-playnite/">01. Scaricare Playnite</option><option value="../02-install-playnite/">02. Installare Playnite</option><option value="../03-add-ons/">03. Installare le integrazioni</option><option value="../04-playnite-settings/">04. Verificare le impostazioni di Playnite</option><option value="../05-metadata/">05. Configurare immagini e metadati</option><option value="../06-achievements/" selected>06. Collegare Playnite Achievements</option><option value="../07-video-tools/">07. Preparare gli strumenti video</option><option value="../10-music-profile/">08. Configurare la musica</option><option value="../09-download-metadata/">09. Scaricare i metadati della libreria</option><option value="../14-download-xnite/">10. Scaricare X-Nite</option><option value="../15-installation-files/">11. Identificare i due pacchetti</option><option value="../16-install-extension/">12. Installare X-Nite Profile System</option><option value="../17-install-theme/">13. Installare il tema Fullscreen</option><option value="../18-activate-theme/">14. Attivare X-Nite e terminare</option><option value="../19-first-launch/">15. Preparare il primo avvio</option><option value="../20-create-profile/">16. Creare il primo profilo</option><option value="../21-profile-avatar/">17. Scegliere l’avatar</option><option value="../22-profile-color/">18. Scegliere il colore</option><option value="../23-profile-background/">19. Scegliere lo sfondo principale</option><option value="../24-finish-profile/">20. Completare la configurazione</option></select></label></div>
+<div class="xn-tutorial__panel" markdown="1">
+<div class="xn-tutorial__visual">
 <div class="xn-guide-gallery">
-<figure><a class="xn-guide-image" href="../../../assets/installation/06-achievements-01.png" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci schermata: Collegare Playnite Achievements (1/3)"><img src="../../../assets/installation/06-achievements-01.png" alt="Collegare Playnite Achievements — 1/3" loading="lazy" decoding="async"></a><figcaption>Ingrandisci schermata: Collegare Playnite Achievements (1/3)</figcaption></figure>
-<figure><a class="xn-guide-image" href="../../../assets/installation/06-achievements-02.png" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci schermata: Collegare Playnite Achievements (2/3)"><img src="../../../assets/installation/06-achievements-02.png" alt="Collegare Playnite Achievements — 2/3" loading="lazy" decoding="async"></a><figcaption>Ingrandisci schermata: Collegare Playnite Achievements (2/3)</figcaption></figure>
-<figure><a class="xn-guide-image" href="../../../assets/installation/06-achievements-03.png" data-guide-image data-close-label="Chiudi immagine" aria-label="Ingrandisci schermata: Collegare Playnite Achievements (3/3)"><img src="../../../assets/installation/06-achievements-03.png" alt="Collegare Playnite Achievements — 3/3" loading="lazy" decoding="async"></a><figcaption>Ingrandisci schermata: Collegare Playnite Achievements (3/3)</figcaption></figure>
+<figure data-guide-frame data-guide-label="Aprire i componenti aggiuntivi"><a class="xn-guide-image" href="../../../assets/installation/06.0-Acess-Addons-Archievements.png" data-guide-image><img src="../../../assets/installation/06.0-Acess-Addons-Archievements.png" alt="Aprire i componenti aggiuntivi" loading="eager" decoding="async"></a></figure>
+<figure data-guide-frame data-guide-label="Aprire Playnite Achievements"><a class="xn-guide-image" href="../../../assets/installation/06.1-Acess-Archivements.png" data-guide-image><img src="../../../assets/installation/06.1-Acess-Archivements.png" alt="Aprire Playnite Achievements" loading="eager" decoding="async"></a></figure>
+<figure data-guide-frame data-guide-label="Configurare la sincronizzazione"><a class="xn-guide-image" href="../../../assets/installation/06.2-achievements.png" data-guide-image><img src="../../../assets/installation/06.2-achievements.png" alt="Configurare la sincronizzazione" loading="eager" decoding="async"></a></figure>
+<figure data-guide-frame data-guide-label="Accedere a Steam"><a class="xn-guide-image" href="../../../assets/installation/06.3-achievements.png" data-guide-image><img src="../../../assets/installation/06.3-achievements.png" alt="Accedere a Steam" loading="eager" decoding="async"></a></figure>
+<figure data-guide-frame data-guide-label="Confermare l’autenticazione"><a class="xn-guide-image" href="../../../assets/installation/06.4-achievements.png" data-guide-image><img src="../../../assets/installation/06.4-achievements.png" alt="Confermare l’autenticazione" loading="eager" decoding="async"></a></figure>
+<figure data-guide-frame data-guide-label="Includere i giochi degli amici"><a class="xn-guide-image" href="../../../assets/installation/06.5-achievements-Friends-games.png" data-guide-image><img src="../../../assets/installation/06.5-achievements-Friends-games.png" alt="Includere i giochi degli amici" loading="eager" decoding="async"></a></figure>
+</div>
+<div class="xn-tutorial__dots" data-guide-dots></div>
+</div>
+<div class="xn-tutorial__notes" tabindex="0" markdown="1">
+<div data-guide-note-start="0" data-guide-note-end="0" markdown="1">
+
+In Desktop, apri **Menu > Componenti aggiuntivi (F9)**.
+
 </div>
 
-!!! success "Prima di continuare"
-    Steam è autenticato e la prima sincronizzazione è terminata.
+<div data-guide-note-start="1" data-guide-note-end="1" markdown="1">
 
-[Precedente](05-metadata.md){ .md-button }
-[Successivo →](07-video-tools.md){ .md-button .md-button--primary }
+Apri **Impostazioni delle estensioni > Generiche > Playnite Achievements**.
+
+</div>
+
+<div data-guide-note-start="2" data-guide-note-end="2" markdown="1">
+
+In **General > Sync & Updates**, usa i valori consigliati: aggiornamento personale ogni **2 ore**, aggiornamento **Recent** degli amici ogni **12 ore** e monitoraggio durante i giochi. Playnite Achievements gestisce questi intervalli.
+
+</div>
+
+<div data-guide-note-start="3" data-guide-note-end="3" markdown="1">
+
+In **Platforms > Steam**, attiva **Enable this platform** e scegli **Sign in**. Usa l’account collegato nel client Steam per mantenere coerenti amici e obiettivi. Configura altre piattaforme solo se le usi.
+
+</div>
+
+<div data-guide-note-start="4" data-guide-note-end="4" markdown="1">
+
+Scegli **Check** e verifica **Authenticated**. L’accesso autorizza la lettura dell’account, ma non completa la sincronizzazione iniziale.
+
+</div>
+
+<div data-guide-note-start="5" data-guide-note-end="5" markdown="1">
+
+In **Friends**, attiva **Steam** e **Include unowned games in refresh** per includere i giochi degli amici che non possiedi. Scegli **Refresh Friends List**, salva e completa la prima sincronizzazione in Playnite Achievements. Può richiedere tempo; la presenza nella Hub viene letta separatamente da Steam.
+
+</div>
+
+</div>
+</div>
+<div class="xn-tutorial__footer" markdown="1">
+[Precedente](05-metadata.md){ .md-button data-guide-prev="true" }
+<span class="xn-tutorial__counter" data-guide-counter role="status" aria-live="polite">1 / 6</span>
+[Successivo →](07-video-tools.md){ .md-button .md-button--primary data-guide-next="true" }
+</div>
+</div>

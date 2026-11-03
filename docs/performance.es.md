@@ -1,7 +1,12 @@
-# Rendimiento
-- Mantén Playnite, los controladores gráficos y las integraciones actualizados.
-- Evita imágenes importadas mucho mayores que la resolución de pantalla.
-- Espera la primera carga de carátulas y logros antes de comparar.
-- Incluye resolución, GPU y tamaño de biblioteca en los informes.
+---
+title: Rendimiento
+template: faq.html
+hide:
+- navigation
+- toc
+- footer
+search:
+  exclude: true
+---
 
-No borres los datos de la extensión: contienen los perfiles.
+<a href="../help/#performance" data-guide-redirect>Ayuda y preguntas frecuentes</a>
