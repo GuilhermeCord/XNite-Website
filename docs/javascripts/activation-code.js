@@ -61,6 +61,26 @@ const status = document.querySelector("#status");
 const send = document.querySelector("#send");
 const replacement = document.querySelector("#replacement");
 const email = form.elements.email;
+const validationMessages = {
+  "en-US": ["Enter your email address.", "Enter a valid email address.", "Enter the code you received by email.", "Enter the six-digit code."],
+  "pt-BR": ["Digite seu e-mail.", "Digite um e-mail válido.", "Digite o código recebido por e-mail.", "Digite o código de seis dígitos."],
+  "es-ES": ["Introduce tu correo electrónico.", "Introduce un correo electrónico válido.", "Introduce el código recibido por correo.", "Introduce el código de seis dígitos."],
+  "fr-FR": ["Saisissez votre adresse e-mail.", "Saisissez une adresse e-mail valide.", "Saisissez le code reçu par e-mail.", "Saisissez le code à six chiffres."],
+  "it-IT": ["Inserisci il tuo indirizzo email.", "Inserisci un indirizzo email valido.", "Inserisci il codice ricevuto via email.", "Inserisci il codice di sei cifre."]
+};
+const [emailRequired, emailInvalid, codeRequired, codeInvalid] = validationMessages[language];
+for (const [input, required, invalid] of [
+  [email, emailRequired, emailInvalid],
+  [form.elements.code, codeRequired, codeInvalid]
+]) {
+  input.addEventListener("input", () => input.setCustomValidity(""));
+  input.addEventListener("invalid", () => {
+    input.setCustomValidity("");
+    if (!input.validity.valid) {
+      input.setCustomValidity(input.validity.valueMissing ? required : invalid);
+    }
+  });
+}
 async function call(path, data) {
   const response = await fetch("https://xnite-activation.xnitexbox.workers.dev" + path,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)});
   return response.json();
