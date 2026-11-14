@@ -1117,3 +1117,34 @@ html.xn-features-open { overflow:hidden; }
 .xn-lightbox-zoom button:disabled {opacity:.3;cursor:default;}
 .xn-lightbox-zoom button:focus-visible {outline:2px solid #9bf00b;outline-offset:3px;}
 .xn-zoom-level {min-width:44px;text-align:center;font-size:12px;}
+
+.xn-activation{text-align:center;padding:2rem 0}
+.xn-activation #device{background:#fff;padding:20px 0;max-width:660px;margin-inline:auto}
+.xn-activation #code-label{margin-top:18px;font-size:13px;letter-spacing:.12em;color:#525852}
+.xn-activation #device-name strong{display:inline;color:inherit;margin:0;font:inherit;font-weight:750}
+.xn-activation #pair-code{display:block;font:700 26px Consolas,monospace;margin:6px 0;color:#107c10}
+.xn-activation .methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:660px;gap:16px;margin:24px auto}
+.xn-activation .methods button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px}
+.xn-activation .methods svg{flex:none}
+.xn-activation .discord{background:#5869ff;color:#fff}
+.xn-activation .coffee{background:#ffdd00;color:#171917}
+.xn-activation .methods button:hover{text-decoration:underline;text-underline-offset:3px}
+.xn-activation .discord:hover{background:#7080ff}
+.xn-activation .coffee:hover{background:#ffe445}
+.xn-activation [hidden]{display:none !important}
+.xn-activation dialog{text-align:left;background:#fff}
+.xn-activation dialog{width:min(520px,calc(100% - 32px));max-height:calc(100% - 32px);padding:28px;border:1px solid #d7ded4;border-radius:8px;color:inherit}
+.xn-activation dialog::backdrop{background:#0f120fc4}
+.xn-activation .dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}
+.xn-activation .dialog-head h2{margin:0;font-size:24px;line-height:1.25}
+.xn-activation #close-mail{background:#eef2eb;padding:4px 12px;font-size:22px}
+.xn-activation form label{display:block;margin:12px 0}
+.xn-activation form input, .xn-activation form select{display:block;width:100%;margin-top:5px;border:1px solid #727872;border-radius:4px;padding:9px;color:inherit;background:white}
+.xn-activation button{border-radius:4px;font:inherit;font-weight:700;cursor:pointer}
+.xn-activation form button{background:#eef2eb;color:#171917;padding:12px 18px;min-height:48px}
+.xn-activation form input,.xn-activation form select{min-height:46px}
+.xn-activation :is(button,input,select):focus-visible{outline:2px solid #107c10;outline-offset:3px}
+.xn-activation button:disabled{opacity:.65;cursor:default}
+.xn-activation form [type=submit]{background:#9bf00b;margin-top:8px}
+.xn-activation #discord-status{color:#525852}
+@media(max-width:480px){.xn-activation .methods{grid-template-columns:1fr}}

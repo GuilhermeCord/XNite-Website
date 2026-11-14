@@ -75,6 +75,7 @@ plugins:
         Achievements: Conquistas
         Xbox menu: Menu Xbox
         Help: Ajuda
+        Activation Code: Código de ativação
         Performance: Desempenho
         Troubleshooting: Problemas comuns
         Installation guide: Guia de instalação
@@ -119,6 +120,7 @@ plugins:
         Achievements: Logros
         Xbox menu: Menú Xbox
         Help: Ayuda
+        Activation Code: Código de activación
         Performance: Rendimiento
         Troubleshooting: Problemas comunes
         Installation guide: Guía de instalación
@@ -163,6 +165,7 @@ plugins:
         Achievements: Succès
         Xbox menu: Menu Xbox
         Help: Aide
+        Activation Code: Code d’activation
         Performance: Performances
         Troubleshooting: Problèmes courants
         Installation guide: Guide d’installation
@@ -207,6 +210,7 @@ plugins:
         Achievements: Obiettivi
         Xbox menu: Menu Xbox
         Help: Aiuto
+        Activation Code: Codice di attivazione
         Performance: Prestazioni
         Troubleshooting: Problemi comuni
         Installation guide: Guida all’installazione
@@ -271,6 +275,7 @@ nav:
     - 19. Choose your main background: installation/23-profile-background.md
     - 20. Finish setup: installation/24-finish-profile.md
 - Help: help.md
+- Activation Code: activation-code.md
 markdown_extensions:
 - admonition
 - attr_list
@@ -281,6 +286,7 @@ extra_javascript:
 - javascripts/installation.js?v=20261027-hub
 - javascripts/navigation.js?v=20261027-locale-fix
 - javascripts/tutorial.js?v=20261029-install-order
+- javascripts/activation-code.js
 - javascripts/faq.js?v=20261026-help-faq
 site_description: X-Nite — an Xbox-inspired Fullscreen experience for Playnite. Explore
   profiles, your library and the illustrated installation guide.
