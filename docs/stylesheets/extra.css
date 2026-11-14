@@ -1142,7 +1142,7 @@ html.xn-features-open { overflow:hidden; }
 .xn-activation form input, .xn-activation form select{display:block;width:100%;margin-top:5px;border:1px solid #727872;border-radius:4px;padding:9px;color:inherit;background:white}
 .xn-activation button{border-radius:4px;font:inherit;font-weight:700;cursor:pointer}
 .xn-activation form button{background:#eef2eb;color:#171917;padding:12px 18px;min-height:48px}
-.xn-activation form input,.xn-activation form select{min-height:46px}
+.xn-activation form input,.xn-activation form select{min-height:46px;font:inherit;font-size:18px}
 .xn-activation :is(button,input,select):focus-visible{outline:2px solid #107c10;outline-offset:3px}
 .xn-activation button:disabled{opacity:.65;cursor:default}
 .xn-activation form [type=submit]{background:#9bf00b;margin-top:8px}
