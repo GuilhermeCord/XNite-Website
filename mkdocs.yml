@@ -274,7 +274,6 @@ nav:
     - 18. Choose your color: installation/22-profile-color.md
     - 19. Choose your main background: installation/23-profile-background.md
     - 20. Finish setup: installation/24-finish-profile.md
-- Activation Code: activation-code.md
 - Help: help.md
 markdown_extensions:
 - admonition

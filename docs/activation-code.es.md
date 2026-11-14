@@ -1,5 +1,7 @@
 ---
 title: Activar X-Nite
+search:
+  exclude: true
 ---
 
 <div class="xn-activation"><h1 id="activation-title">Activar X-Nite</h1><div id="device" hidden><div id="device-name"></div><div id="code-label"></div><strong id="pair-code"></strong><span id="pair-help"></span></div>
