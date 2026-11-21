@@ -1123,8 +1123,10 @@ html.xn-features-open { overflow:hidden; }
 .xn-activation #code-label{margin-top:18px;font-size:13px;letter-spacing:.12em;color:#525852}
 .xn-activation #device-name strong{display:inline;color:inherit;margin:0;font:inherit;font-weight:750}
 .xn-activation #pair-code{display:block;font:700 26px Consolas,monospace;margin:6px 0;color:#107c10}
-.xn-activation .methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:660px;gap:16px;margin:24px auto}
-.xn-activation .methods button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px}
+.xn-activation .methods{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));max-width:800px;gap:16px;margin:24px auto}
+.xn-activation .methods button{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:12px 18px;line-height:1.5}
+.xn-activation .methods button span{flex:none;white-space:nowrap}
+.xn-activation .methods img{display:block;flex:none;width:20px;height:28px;object-fit:contain}
 .xn-activation .methods svg{flex:none}
 .xn-activation .discord{background:#5869ff;color:#fff}
 .xn-activation .coffee{background:#ffdd00;color:#171917}
