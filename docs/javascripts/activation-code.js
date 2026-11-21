@@ -36,8 +36,17 @@ function renderMail() {
   email.readOnly = mailStep === 2 || mailBusy;
   form.elements.code.disabled = mailStep !== 2 || mailBusy;
   const first = document.getElementById("email-progress"), second = document.getElementById("code-progress");
-  first.classList.toggle("complete", mailStep === 2);
-  first.querySelector(".step-number").textContent = mailStep === 2 ? "✓" : "1";
+  for (const [index, progress] of [first, second].entries()) {
+    const complete = index === 0 ? mailStep === 2 : message === 13;
+    progress.classList.toggle("complete", complete);
+    const marker = progress.querySelector(".step-number");
+    if (complete) {
+      const check = form.querySelector(".activation-check").cloneNode(true);
+      check.setAttribute("class", "step-check");
+      check.querySelector("path").setAttribute("fill", "currentColor");
+      marker.replaceChildren(check);
+    } else marker.textContent = String(index + 1);
+  }
   first.toggleAttribute("aria-current", mailStep === 1);
   second.toggleAttribute("aria-current", mailStep === 2);
   (mailStep === 1 ? first : second).setAttribute("aria-current", "step");

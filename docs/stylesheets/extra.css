@@ -1170,6 +1170,7 @@ html.xn-features-open { overflow:hidden; }
 #mail .mail-steps [aria-current=step]{color:#171917;font-weight:800}
 #mail [aria-current=step] .step-number{background:#9bf00b;color:#171917}
 #mail .mail-steps .complete .step-number{background:#438500;color:white}
+#mail .step-check{display:block;width:22px;height:22px}
 #mail .mail-steps .complete{color:#171917}
 #mail .mail-steps .complete+li:before{background:#9bf00b}
 #mail h3{margin:0 0 12px;font-size:29px;line-height:1.15;font-weight:800;letter-spacing:-.7px}
