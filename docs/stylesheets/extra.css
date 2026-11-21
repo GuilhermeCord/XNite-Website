@@ -1194,3 +1194,10 @@ html.xn-features-open { overflow:hidden; }
 #mail #mail-status{font-size:13px;line-height:1.5;color:#525852;margin:18px 0 0}
 #mail #mail-status:empty{display:none}
 @media(max-width:520px){#mail{padding:24px 20px}#mail .dialog-head h2{font-size:22px}#mail h3{font-size:26px}#mail .mail-steps{gap:8px;font-size:11px}#mail .mail-steps li{gap:6px}#mail .step-number{width:28px;height:28px}#mail .mail-steps li+li:before{min-width:8px;margin:0}#mail .mail-actions{gap:6px}}
+
+/* Final activation state replaces pairing information. */
+#activation-success{box-sizing:border-box;width:min(100%,520px);margin:clamp(28px,8vh,90px) auto;padding:44px 28px;text-align:center;background:#f6f8f3;border:1px solid #e0e7d9;border-radius:16px;outline:none}
+#activation-success .success-mark{display:grid;place-items:center;width:72px;height:72px;margin:0 auto 22px;background:#107c10;color:white;border-radius:50%}
+#activation-success svg{display:block;width:40px;height:40px}
+#activation-success h2{margin:0 0 10px;font-size:clamp(26px,4vw,34px);font-weight:800;line-height:1.2;letter-spacing:-.7px;color:#171917}
+#activation-success p{margin:0;font-size:18px;color:#525852;line-height:1.5}

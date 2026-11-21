@@ -101,7 +101,21 @@ function translate() {
   document.querySelector("#discord-label").textContent = continueWith + " Discord";
   document.querySelector("#coffee-label").textContent = continueWith + " Buy Me a Coffee";
   document.querySelector("#activation-title").textContent = t[0];
-  document.querySelector("#device").hidden = !device;
+  const completed = message === 13;
+  document.querySelector("#activation-title").hidden = completed;
+  document.querySelector("#device").hidden = !device || completed;
+  const success = document.querySelector("#activation-success");
+  success.hidden = !completed;
+  const [successTitle, successHelp] = ({
+    "pt-BR": ["Ativação concluída", "Volte ao X-Nite."],
+    "en-US": ["Activation complete", "Return to X-Nite."],
+    "es-ES": ["Activación completada", "Vuelve a X-Nite."],
+    "fr-FR": ["Activation terminée", "Retournez dans X-Nite."],
+    "it-IT": ["Attivazione completata", "Torna a X-Nite."]
+  })[language];
+  document.querySelector("#success-title").textContent = successTitle;
+  document.querySelector("#success-help").textContent = successHelp;
+  if (completed) methods.hidden = discordStatus.hidden = true;
   if (device) {
     const [prefix, label] = ({
       "en-US": ["You are activating X-Nite on the PC ", "CODE"],
@@ -120,7 +134,7 @@ function translate() {
   document.querySelector("#close-mail").ariaLabel = ({ "pt-BR":"Fechar", "es-ES":"Cerrar", "fr-FR":"Fermer", "it-IT":"Chiudi" })[language] ?? "Close";
   discordStatus.textContent = t[4];
   renderMail();
-  status.textContent = message == null || mail.open ? "" : t[message];
+  status.textContent = message == null || mail.open || completed ? "" : t[message];
   mailStatus.textContent = message == null || !mail.open ? "" : t[message];
 }
 function report(index) { message = index; translate(); }
@@ -202,6 +216,7 @@ form.onsubmit = async event => {
       mail.close();
       methods.hidden = discordStatus.hidden = true;
       report(13);
+      document.querySelector("#activation-success").focus();
     } else if (data.error === "device_limit") {
       form.elements.replace.replaceChildren(...data.devices.map(device => new Option(device.name,device.id)));
       replacement.hidden = false;
