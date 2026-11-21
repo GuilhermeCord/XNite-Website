@@ -16,6 +16,6 @@ search:
 <section id="code-step" aria-labelledby="code-heading" hidden><h3 id="code-heading"></h3><p><span id="code-description"></span> <strong id="sent-email"></strong></p>
 <label class="mail-field"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></svg><input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required disabled></label>
 <label id="replacement" hidden><span id="replacement-label"></span><select name="replace"></select></label>
-<button type="submit" class="mail-primary"><span id="activate-label"></span><span aria-hidden="true">✓</span></button>
+<button type="submit" class="mail-primary"><span id="activate-label"></span><svg class="activation-check" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><path fill="#000" d="m10.5 19.586-6.293-6.293a1 1 0 0 0-1.414 1.414l7 7a1 1 0 0 0 1.414 0l14-14a1 1 0 0 0-1.414-1.414L10.5 19.586Z"/></svg></button>
 <div class="mail-actions"><button id="change-email" type="button"></button><span class="mail-divider" aria-hidden="true">|</span><span id="resend-help"></span><button id="resend" type="button"></button></div></section>
 </form><p id="mail-status" role="status" aria-live="polite"></p></dialog><p id="status" role="status"></p></div>
