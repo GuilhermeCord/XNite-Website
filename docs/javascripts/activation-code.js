@@ -12,6 +12,74 @@ const copy = {
 };
 const locale = document.documentElement.lang.split("-")[0].toLowerCase();
 const language = ({ pt: "pt-BR", es: "es-ES", fr: "fr-FR", it: "it-IT" })[locale] ?? "en-US";
+const stepCopy = {
+  "pt-BR": ["Seu e-mail", "Código de ativação", "Informe seu e-mail", "Enviaremos um código de ativação para o e-mail cadastrado no Buy Me a Coffee.", "Digite o código de ativação", "Insira o código que enviamos para", "Código de 6 dígitos", "Alterar e-mail", "Não recebeu o código?", "Reenviar código"],
+  "en-US": ["Your email", "Activation code", "Enter your email", "We will send an activation code to the email registered with Buy Me a Coffee.", "Enter your activation code", "Enter the code we sent to", "6-digit code", "Change email", "Didn’t receive the code?", "Resend code"],
+  "es-ES": ["Tu correo", "Código de activación", "Introduce tu correo", "Enviaremos un código de activación al correo registrado en Buy Me a Coffee.", "Introduce el código de activación", "Introduce el código que enviamos a", "Código de 6 dígitos", "Cambiar correo", "¿No recibiste el código?", "Reenviar código"],
+  "fr-FR": ["Votre e-mail", "Code d’activation", "Saisissez votre e-mail", "Nous enverrons un code d’activation à l’adresse enregistrée sur Buy Me a Coffee.", "Saisissez le code d’activation", "Saisissez le code envoyé à", "Code à 6 chiffres", "Modifier l’e-mail", "Code non reçu ?", "Renvoyer le code"],
+  "it-IT": ["La tua email", "Codice di attivazione", "Inserisci la tua email", "Invieremo un codice di attivazione all’email registrata su Buy Me a Coffee.", "Inserisci il codice di attivazione", "Inserisci il codice che abbiamo inviato a", "Codice di 6 cifre", "Modifica email", "Non hai ricevuto il codice?", "Invia di nuovo"]
+};
+let mailStep = 1, mailBusy = false, sentEmail = "", cooldownTimer;
+const cooldowns = new Map();
+const remaining = () => Math.max(0, Math.ceil(((cooldowns.get(email.value.trim().toLowerCase()) || 0) - Date.now()) / 1000));
+function renderMail() {
+  const t = words(), s = stepCopy[language];
+  for (const [id, text] of [["email-step-label",s[0]],["code-step-label",s[1]],["email-heading",s[2]],["email-description",s[3]],["code-heading",s[4]],["code-description",s[5]],["change-email",s[7]],["resend-help",s[8]],["send-label",t[6]],["activate-label",t[9]],["replacement-label",t[8]]]) document.getElementById(id).textContent = text;
+  document.querySelector(".mail-steps").ariaLabel = t[0];
+  email.ariaLabel = t[5];
+  email.placeholder = t[5];
+  form.elements.code.ariaLabel = s[6];
+  form.elements.code.placeholder = s[6];
+  document.getElementById("sent-email").textContent = sentEmail;
+  document.getElementById("email-step").hidden = mailStep !== 1;
+  document.getElementById("code-step").hidden = mailStep !== 2;
+  email.readOnly = mailStep === 2 || mailBusy;
+  form.elements.code.disabled = mailStep !== 2 || mailBusy;
+  const first = document.getElementById("email-progress"), second = document.getElementById("code-progress");
+  first.classList.toggle("complete", mailStep === 2);
+  first.querySelector(".step-number").textContent = mailStep === 2 ? "✓" : "1";
+  first.toggleAttribute("aria-current", mailStep === 1);
+  second.toggleAttribute("aria-current", mailStep === 2);
+  (mailStep === 1 ? first : second).setAttribute("aria-current", "step");
+  const seconds = remaining();
+  send.disabled = mailBusy || seconds > 0;
+  if (mailStep === 1 && seconds) document.getElementById("send-label").textContent = t[6] + " (" + seconds + "s)";
+  document.getElementById("resend").textContent = s[9] + (seconds ? " (" + seconds + "s)" : "");
+  for (const id of ["resend", "change-email", "close-mail"]) document.getElementById(id).disabled = mailBusy || (id === "resend" && seconds > 0);
+  form.querySelector("[type=submit]").disabled = mailBusy;
+  form.elements.replace.disabled = mailBusy;
+}
+function startCountdown() {
+  clearInterval(cooldownTimer);
+  cooldownTimer = setInterval(() => { if (mail.open) renderMail(); else clearInterval(cooldownTimer); }, 1000);
+}
+function changeEmail() {
+  mailStep = 1; message = null; sentEmail = "";
+  form.elements.code.value = "";
+  form.elements.code.setCustomValidity("");
+  replacement.hidden = true;
+  translate(); email.focus();
+}
+async function requestCode() {
+  if (mailBusy || remaining() || !email.reportValidity()) return;
+  const address = email.value.trim();
+  mailBusy = true; message = null; translate();
+  try {
+    const result = await call("/email/start", {email:address});
+    if (result.ok) {
+      sentEmail = email.value = address;
+      cooldowns.set(address.toLowerCase(), Date.now() + 60000);
+      mailStep = 2;
+      report(11);
+      startCountdown();
+    } else report(12);
+  } catch { report(12); }
+  finally {
+    mailBusy = false; renderMail();
+    if (mailStep === 2) form.elements.code.focus();
+  }
+}
+
 const words = () => copy[language];
 let device, message;
 const methods = document.querySelector("#methods");
@@ -42,20 +110,17 @@ function translate() {
   }
   document.querySelector("#close-mail").ariaLabel = ({ "pt-BR":"Fechar", "es-ES":"Cerrar", "fr-FR":"Fermer", "it-IT":"Chiudi" })[language] ?? "Close";
   discordStatus.textContent = t[4];
-  form.elements.email.parentElement.firstChild.nodeValue = t[5] + " ";
-  send.textContent = t[6];
-  form.elements.code.parentElement.firstChild.nodeValue = t[7] + " ";
-  replacement.firstChild.nodeValue = t[8] + " ";
-  form.querySelector("[type=submit]").textContent = t[9];
+  renderMail();
   status.textContent = message == null || mail.open ? "" : t[message];
   mailStatus.textContent = message == null || !mail.open ? "" : t[message];
 }
 function report(index) { message = index; translate(); }
 const mail = document.querySelector("#mail");
 const mailStatus = document.querySelector("#mail-status");
-document.querySelector("#coffee").onclick = () => { mail.showModal(); translate(); email.focus(); };
+document.querySelector("#coffee").onclick = () => { mail.showModal(); translate(); startCountdown(); (mailStep === 2 ? form.elements.code : email).focus(); };
 document.querySelector("#close-mail").onclick = () => mail.close();
-mail.onclose = () => { if (message !== 13) message = null; translate(); };
+mail.oncancel = event => { if (mailBusy) event.preventDefault(); };
+mail.onclose = () => { clearInterval(cooldownTimer); if (message !== 13) message = null; translate(); };
 const form = document.querySelector("#form");
 const status = document.querySelector("#status");
 const send = document.querySelector("#send");
@@ -108,21 +173,21 @@ for (const link of document.querySelectorAll(".md-select a[href]")) {
   const url = new URL(link.href);
   if (/\/activation-code\/$/.test(url.pathname)) { url.searchParams.set("pair", pair); link.href = url.href; }
 }
-send.onclick = async () => {
-  if (!email.reportValidity()) return;
-  send.disabled = true;
-  try {
-    const result = await call("/email/start",{email:email.value});
-    report(result.ok ? 11 : 12);
-  } catch { report(12); }
-  finally { send.disabled = false; }
-};
+send.onclick = requestCode;
+document.getElementById("resend").onclick = requestCode;
+document.getElementById("change-email").onclick = changeEmail;
+email.addEventListener("input", () => renderMail());
+form.elements.code.addEventListener("input", () => {
+  form.elements.code.value = form.elements.code.value.replace(/[^0-9]/g, "");
+});
 form.onsubmit = async event => {
   event.preventDefault();
-  const submit = form.querySelector("[type=submit]");
-  submit.disabled = true;
+  if (mailBusy) return;
+  if (mailStep === 1) { await requestCode(); return; }
+  if (!form.reportValidity()) return;
+  mailBusy = true; renderMail();
   try {
-    const data = await call("/email/activate", {pair,email:email.value,code:form.elements.code.value,
+    const data = await call("/email/activate", {pair,email:sentEmail,code:form.elements.code.value,
       replace:replacement.hidden ? undefined : form.elements.replace.value});
     if (data.ok) {
       mail.close();
@@ -134,7 +199,7 @@ form.onsubmit = async event => {
       report(14);
     } else report(data.error === "invalid_code" ? 15 : 16);
   } catch { report(16); }
-  finally { submit.disabled = false; }
+  finally { mailBusy = false; renderMail(); }
 };
 
 })();

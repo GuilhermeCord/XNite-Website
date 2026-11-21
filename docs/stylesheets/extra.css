@@ -1148,3 +1148,45 @@ html.xn-features-open { overflow:hidden; }
 .xn-activation form [type=submit]{background:#9bf00b;margin-top:8px}
 .xn-activation #discord-status{color:#525852}
 @media(max-width:480px){.xn-activation .methods{grid-template-columns:1fr}}
+
+
+/* Buy Me a Coffee: email, then verification code. */
+#mail{box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 32px);padding:32px 36px;border:1px solid #d7ded4;border-radius:14px;background:#fff;color:#171917;font:16px/1.5 "Segoe UI",system-ui,sans-serif;text-align:left;box-shadow:0 20px 70px #0004}
+#mail *{box-sizing:border-box}
+#mail [hidden]{display:none!important}
+#mail::backdrop{background:#0f120fc4}
+#mail .dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 28px}
+#mail .dialog-head h2{display:flex;align-items:center;gap:12px;margin:0;font-size:25px;font-weight:800;line-height:1.2;letter-spacing:-.5px}
+#mail .dialog-head img{width:30px;height:42px;flex:none}
+#mail button{font:inherit;border:0;cursor:pointer;color:inherit}
+#mail #close-mail{display:grid;place-items:center;flex:none;width:38px;height:38px;min-height:0;padding:0;background:#f0f1ef;border-radius:8px;font-size:26px;font-weight:400}
+#mail .mail-steps{display:flex;align-items:center;gap:12px;margin:0 0 30px;padding:0;list-style:none;font-size:13px;font-weight:650;color:#777}
+#mail .mail-steps li{margin:0;padding:0;display:flex;align-items:center;gap:9px;white-space:nowrap}
+#mail .mail-steps li+li{flex:1}
+#mail .mail-steps li+li:before{content:"";height:2px;min-width:16px;flex:1;background:#d2d5d0;margin-right:3px}
+#mail .step-number{display:grid;place-items:center;width:32px;height:32px;flex:none;border-radius:50%;background:#eee;color:#747874;font-size:17px;font-weight:800}
+#mail .mail-steps [aria-current=step]{color:#171917;font-weight:800}
+#mail [aria-current=step] .step-number{background:#9bf00b;color:#171917}
+#mail .mail-steps .complete .step-number{background:#438500;color:white}
+#mail .mail-steps .complete{color:#171917}
+#mail .mail-steps .complete+li:before{background:#9bf00b}
+#mail h3{margin:0 0 12px;font-size:29px;line-height:1.15;font-weight:800;letter-spacing:-.7px}
+#mail section>p{margin:0 0 22px;font-size:16px;line-height:1.5}
+#mail #sent-email{overflow-wrap:anywhere}
+#mail .mail-field{display:flex;align-items:center;gap:12px;width:100%;margin:0 0 24px;border:1px solid #92978e;border-radius:7px;padding:0 14px;min-height:52px;background:#fff}
+#mail .mail-field:focus-within{outline:2px solid #107c10;outline-offset:2px}
+#mail .mail-field svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;flex:none}
+#mail .mail-field input{display:block;min-width:0;width:100%;min-height:50px;padding:10px 0;margin:0;border:0;border-radius:0;outline:none;background:transparent;color:#171917;font:inherit;font-size:17px;box-shadow:none}
+#mail .mail-primary{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:50px;padding:12px 16px;margin:0;background:#9bf00b;color:#171917;border-radius:7px;font-size:18px;font-weight:800}
+#mail .mail-primary:hover{background:#aaf426}
+#mail .mail-primary>span+span{font-size:24px;line-height:1}
+#mail .mail-actions{display:flex;align-items:baseline;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px;font-size:13px;color:#62685e}
+#mail .mail-actions button{padding:0;min-height:32px;background:transparent;color:#31550b;text-decoration:underline;text-underline-offset:3px;font-size:13px;font-weight:500}
+#mail .mail-actions button:disabled{color:#62685e;text-decoration:none}
+#mail button:disabled{opacity:.65;cursor:default}
+#mail :is(button,select):focus-visible{outline:2px solid #107c10;outline-offset:3px}
+#mail #replacement{display:block;margin:0 0 20px;font-size:15px}
+#mail select{width:100%;margin-top:6px;min-height:44px;font:inherit;background:white;color:inherit;border:1px solid #92978e;border-radius:7px;padding:8px}
+#mail #mail-status{font-size:13px;line-height:1.5;color:#525852;margin:18px 0 0}
+#mail #mail-status:empty{display:none}
+@media(max-width:520px){#mail{padding:24px 20px}#mail .dialog-head h2{font-size:22px}#mail h3{font-size:26px}#mail .mail-steps{gap:8px;font-size:11px}#mail .mail-steps li{gap:6px}#mail .step-number{width:28px;height:28px}#mail .mail-steps li+li:before{min-width:8px;margin:0}#mail .mail-actions{gap:6px}}
