@@ -1178,7 +1178,7 @@ html.xn-features-open { overflow:hidden; }
 #mail .mail-field svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;flex:none}
 #mail .mail-field input{display:block;min-width:0;width:100%;min-height:50px;padding:10px 0;margin:0;border:0;border-radius:0;outline:none;background:transparent;color:#171917;font:inherit;font-size:17px;box-shadow:none}
 #mail .mail-primary{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:50px;padding:12px 16px;margin:0;background:#9bf00b;color:#171917;border-radius:7px;font-size:18px;font-weight:800}
-#mail .activation-check{display:block;width:28px;height:28px;flex:none}
+#mail :is(.activation-check,.activation-arrow){display:block;width:28px;height:28px;flex:none}
 #mail .mail-primary:hover{background:#aaf426}
 #mail .mail-primary>span+span{font-size:24px;line-height:1}
 #mail .mail-actions{display:flex;align-items:baseline;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px;font-size:13px;color:#62685e}

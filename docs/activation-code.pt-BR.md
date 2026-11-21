@@ -12,7 +12,7 @@ search:
 <form id="form" novalidate>
 <section id="email-step" aria-labelledby="email-heading"><h3 id="email-heading"></h3><p id="email-description"></p>
 <label class="mail-field"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><input name="email" type="email" autocomplete="email" required maxlength="254"></label>
-<button id="send" class="mail-primary" type="button"><span id="send-label"></span><span aria-hidden="true">→</span></button></section>
+<button id="send" class="mail-primary" type="button"><span id="send-label"></span><svg class="activation-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><path fill="#000" d="M15.268 4.21a.75.75 0 0 0-1.04 1.08l8.275 7.96H3.75a.75.75 0 0 0 0 1.5h18.752l-8.273 7.959a.75.75 0 0 0 1.04 1.08l9.428-9.069a1 1 0 0 0 0-1.441l-9.428-9.07Z"/></svg></button></section>
 <section id="code-step" aria-labelledby="code-heading" hidden><h3 id="code-heading"></h3><p><span id="code-description"></span> <strong id="sent-email"></strong></p>
 <label class="mail-field"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></svg><input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required disabled></label>
 <label id="replacement" hidden><span id="replacement-label"></span><select name="replace"></select></label>
