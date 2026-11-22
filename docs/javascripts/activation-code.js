@@ -184,12 +184,19 @@ async function initialize() {
   if (data.discord === true) discordButton.onclick = () => {
     const url = new URL("https://xnite-activation.xnitexbox.workers.dev/discord/start");
     url.searchParams.set("pair", pair);
+    url.searchParams.set("lang", language);
     location.assign(url.href);
   };
   translate();
 }
 translate();
-if (pair) initialize().catch(() => report(10));
+if (params.get("activated") === "discord") {
+  methods.hidden = discordStatus.hidden = true;
+  report(13);
+  document.querySelector("#activation-success").focus();
+  history.replaceState(null, "", location.pathname);
+}
+else if (pair) initialize().catch(() => report(10));
 else report(10);
 for (const link of document.querySelectorAll(".md-select a[href]")) {
   if (!pair) break;

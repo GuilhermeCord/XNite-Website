@@ -1201,3 +1201,8 @@ html.xn-features-open { overflow:hidden; }
 #activation-success svg{display:block;width:40px;height:40px}
 #activation-success h2{margin:0 0 10px;font-size:clamp(26px,4vw,34px);font-weight:800;line-height:1.2;letter-spacing:-.7px;color:#171917}
 #activation-success p{margin:0;font-size:18px;color:#525852;line-height:1.5}
+
+/* Device replacement menus always use the light activation palette. */
+#mail select{color-scheme:light;color:#171917}
+#mail select option{background:#fff;color:#171917}
+#mail select option:disabled{background:#fff;color:#73796e}
