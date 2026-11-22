@@ -19,7 +19,7 @@ theme:
   custom_dir: overrides
   font: false
 extra_css:
-- stylesheets/extra.css?v=20261027-achievements
+- stylesheets/extra.css?v=20261122-activation
 plugins:
 - search
 - i18n:
@@ -285,7 +285,7 @@ extra_javascript:
 - javascripts/installation.js?v=20261027-hub
 - javascripts/navigation.js?v=20261027-locale-fix
 - javascripts/tutorial.js?v=20261029-install-order
-- javascripts/activation-code.js
+- javascripts/activation-code.js?v=20261122-discord
 - javascripts/faq.js?v=20261026-help-faq
 site_description: X-Nite — an Xbox-inspired Fullscreen experience for Playnite. Explore
   profiles, your library and the illustrated installation guide.
