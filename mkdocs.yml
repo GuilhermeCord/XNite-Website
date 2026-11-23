@@ -19,7 +19,7 @@ theme:
   custom_dir: overrides
   font: false
 extra_css:
-- stylesheets/extra.css?v=20261122-activation
+- stylesheets/extra.css?v=20261122-credits
 plugins:
 - search
 - i18n:

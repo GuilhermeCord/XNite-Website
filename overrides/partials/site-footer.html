@@ -7,10 +7,12 @@
   'it': ['Progetto indipendente della community. Non affiliato a Microsoft o Xbox.', 'Video di X-Nite su YouTube', 'Sostieni X-Nite su Buy Me a Coffee', 'Si apre in una nuova scheda']
 } %}
 {% set labels = footer_text.get(locale, footer_text['en']) %}
+{% set credit_text = {'en': 'Based on DashX by', 'pt': 'Baseado no DashX de', 'es': 'Basado en DashX de', 'fr': 'Basé sur DashX de', 'it': 'Basato su DashX di'} %}
 <footer class="xn-site-footer">
   <div class="xn-site-footer__identity">
     <strong class="xn-site-footer__brand">X-Nite</strong>
     <p class="xn-site-footer__note">{{ labels[0] }}</p>
+    <p class="xn-site-footer__note">{{ credit_text.get(locale, credit_text['en']) }} <a href="https://github.com/saVantCZ/DashX" target="_blank" rel="noopener noreferrer">saVantCZ</a>.</p>
   </div>
   <div class="xn-site-footer__actions">
     <a class="xn-footer-social xn-footer-youtube" href="https://www.youtube.com/playlist?list=PLOqFP3LARK6E" target="_blank" rel="noopener noreferrer" aria-label="{{ labels[1] }} — {{ labels[3] }}">
