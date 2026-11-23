@@ -1207,9 +1207,5 @@ html.xn-features-open { overflow:hidden; }
 #mail select option{background:#fff;color:#171917}
 #mail select option:disabled{background:#fff;color:#73796e}
 
-/* Visible attribution for the original theme and customization reference. */
-.xn-credits { max-width:1100px; margin:0 auto; padding:48px clamp(20px,4vw,64px); border-top:1px solid #dce1d8; }
-.xn-credits h2 { margin:0 0 16px; font-size:clamp(1.5rem,2.5vw,2rem); }
-.xn-credits p { font-size:1rem; line-height:1.7; max-width:85ch; margin:12px 0; color:#32372f; }
-.xn-credits a, .xn-site-footer__note a { color:#366900; text-decoration:underline; text-underline-offset:3px; }
-.xn-credits a:focus-visible, .xn-site-footer__note a:focus-visible { outline:2px solid #366900; outline-offset:3px; }
+.xn-site-footer__note a { color:#366900; text-decoration:underline; text-underline-offset:3px; }
+.xn-site-footer__note a:focus-visible { outline:2px solid #366900; outline-offset:3px; }

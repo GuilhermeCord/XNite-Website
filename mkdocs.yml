@@ -19,7 +19,7 @@ theme:
   custom_dir: overrides
   font: false
 extra_css:
-- stylesheets/extra.css?v=20261122-credits
+- stylesheets/extra.css?v=20261122-credits-page
 plugins:
 - search
 - i18n:
@@ -75,6 +75,7 @@ plugins:
         Achievements: Conquistas
         Xbox menu: Menu Xbox
         Help: Ajuda
+        Credits: Créditos
         Activation Code: Código de ativação
         Performance: Desempenho
         Troubleshooting: Problemas comuns
@@ -120,6 +121,7 @@ plugins:
         Achievements: Logros
         Xbox menu: Menú Xbox
         Help: Ayuda
+        Credits: Créditos
         Activation Code: Código de activación
         Performance: Rendimiento
         Troubleshooting: Problemas comunes
@@ -165,6 +167,7 @@ plugins:
         Achievements: Succès
         Xbox menu: Menu Xbox
         Help: Aide
+        Credits: Crédits
         Activation Code: Code d’activation
         Performance: Performances
         Troubleshooting: Problèmes courants
@@ -210,6 +213,7 @@ plugins:
         Achievements: Obiettivi
         Xbox menu: Menu Xbox
         Help: Aiuto
+        Credits: Crediti
         Activation Code: Codice di attivazione
         Performance: Prestazioni
         Troubleshooting: Problemi comuni
@@ -275,6 +279,7 @@ nav:
     - 19. Choose your main background: installation/23-profile-background.md
     - 20. Finish setup: installation/24-finish-profile.md
 - Help: help.md
+- Credits: credits.md
 markdown_extensions:
 - admonition
 - attr_list
